@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="PPTipsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="覅违反弗兰克斯打飞机按实际发违法及附件是放假了违法就裂缝" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jsk-UT-8cc">
+                    <rect key="frame" x="15" y="8" width="345" height="38.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="heightForFooterInSectionheightForFooterInSectionheightForFooterInSection" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmC-RK-KuT">
+                    <rect key="frame" x="15" y="51" width="345" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Jsk-UT-8cc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="O7i-Bo-0Z7"/>
+                <constraint firstItem="mmC-RK-KuT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="RQg-ve-UyN"/>
+                <constraint firstItem="mmC-RK-KuT" firstAttribute="top" secondItem="Jsk-UT-8cc" secondAttribute="bottom" constant="5" id="bRJ-BM-kPJ"/>
+                <constraint firstAttribute="bottom" secondItem="mmC-RK-KuT" secondAttribute="bottom" constant="13" id="mYb-OB-eEI"/>
+                <constraint firstAttribute="trailing" secondItem="mmC-RK-KuT" secondAttribute="trailing" constant="15" id="qZ6-LI-7V5"/>
+                <constraint firstItem="Jsk-UT-8cc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="sFw-kZ-aak"/>
+                <constraint firstAttribute="trailing" secondItem="Jsk-UT-8cc" secondAttribute="trailing" constant="15" id="wG1-Jc-Ddd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="fanLabel" destination="Jsk-UT-8cc" id="uej-gs-EVH"/>
+                <outlet property="yiLabel" destination="mmC-RK-KuT" id="TdL-wT-z4h"/>
+            </connections>
+            <point key="canvasLocation" x="-574" y="81"/>
+        </view>
+    </objects>
+</document>

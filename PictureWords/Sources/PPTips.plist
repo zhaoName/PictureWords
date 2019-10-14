@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>fan</key>
+		<string>欢迎来到 Picture Words!</string>
+		<key>yi</key>
+		<string>Welcome to Picture Words!</string>
+	</dict>
+	<dict>
+		<key>fan</key>
+		<string>你可以输入内容，轻松翻译您的内容。</string>
+		<key>yi</key>
+		<string>You can input your words to translate it now.</string>
+	</dict>
+</array>
+</plist>
