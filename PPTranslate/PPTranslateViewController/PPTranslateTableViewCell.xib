@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="PPTranslateTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Please enter what you want to translate..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cjB-kj-5Je">
+                    <rect key="frame" x="15" y="35" width="345" height="29"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAr-Qj-VNq">
+                    <rect key="frame" x="25" y="147" width="325" height="1"/>
+                    <color key="backgroundColor" red="0.83921568627450982" green="0.83921568627450982" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="0hg-3s-SY0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="aAr-Qj-VNq" secondAttribute="trailing" constant="25" id="I19-HS-15T"/>
+                <constraint firstItem="cjB-kj-5Je" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="Lcc-6f-3IC"/>
+                <constraint firstAttribute="trailing" secondItem="cjB-kj-5Je" secondAttribute="trailing" constant="15" id="OId-wR-9Cd"/>
+                <constraint firstItem="aAr-Qj-VNq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="SLp-hw-Z6F"/>
+                <constraint firstAttribute="bottom" secondItem="cjB-kj-5Je" secondAttribute="bottom" constant="86" id="hwa-sW-Ffp"/>
+                <constraint firstItem="cjB-kj-5Je" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="35" id="lW7-m6-78v"/>
+                <constraint firstItem="aAr-Qj-VNq" firstAttribute="top" secondItem="cjB-kj-5Je" secondAttribute="bottom" constant="83" id="y34-aY-nuJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="yiTextField" destination="cjB-kj-5Je" id="edm-h1-YDR"/>
+            </connections>
+            <point key="canvasLocation" x="-190.5" y="-43"/>
+        </view>
+    </objects>
+</document>
