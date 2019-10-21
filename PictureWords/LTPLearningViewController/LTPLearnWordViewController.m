@@ -43,7 +43,7 @@
         
     }];
     
-    self.view.backgroundColor = [UIColor ltp_colorWithHexString:@"0xefefef" alpha:1.0];
+    self.view.backgroundColor = [[ZZMediator defaultZZMediator] cat_colorWithHexString:@"0xefefef"];
     [self.view addSubview:self.collectionView];
     [self.collectionView registerClass:[LTPMemoryCollectionViewCell class] forCellWithReuseIdentifier:@"LTPMemoryCollectionViewCell"];
 }

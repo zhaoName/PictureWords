@@ -7,7 +7,6 @@
 //
 
 #import "LTPListenViewController.h"
-#import "PPNetworkHandle.h"
 #import "LTPListenModel.h"
 #import <MJExtension.h>
 #import "PPListenTableViewCell.h"
@@ -56,17 +55,22 @@
     NSString *sign = [self cq_MD5Encrypt:[NSString stringWithFormat:@"Binfen_2018_%@", time]];
     NSString *url = [NSString stringWithFormat:@"http://s3.binfenyingyu.com/binfen/programitem/fetch?app_id=com.zhujiayi.nowbig&build=14&desc=0&os=ios&pageNumber=0&pageSize=100&prefix=nce_us&sign=%@&subCategory=2&timestamp=%@&version=1.7.1", sign, time];
     
-    [PPNetworkHandle ltp_GET:url parameters:@{} success:^(NSURLSessionDataTask *task, id responeData) {
-        
+    [[ZZMediator defaultZZMediator] cat_getRequestWithUrl:url params:@{} success:^(id  _Nonnull responeData) {
         self.dataSources = [LTPListenModel mj_objectArrayWithKeyValuesArray:responeData[@"datas"]];
         [LTPPlayMusicHandle ltp_shareMusicTool].musicArray = [self.dataSources mutableCopy];
         
         [self.tableView reloadData];
         [self.tableView.mj_header endRefreshing];
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        
+    } failure:^(NSError * _Nonnull error) {
         [self.tableView.mj_header endRefreshing];
     }];
+//    [PPNetworkHandle ltp_GET:url parameters:@{} success:^(NSURLSessionDataTask *task, id responeData) {
+//        
+//
+//    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+//
+//
+//    }];
 }
 
 #pragma mark - UITableViewDataSource
@@ -150,7 +154,7 @@
         _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
-        _tableView.backgroundColor = [UIColor ltp_colorWithHexString:@"0xf4f7f9"];
+        _tableView.backgroundColor = [[ZZMediator defaultZZMediator] cat_colorWithHexString:@"0xf4f7f9"];
         _tableView.showsVerticalScrollIndicator = NO;
         _tableView.showsHorizontalScrollIndicator = NO;
         _tableView.tableFooterView = [UIView new];
@@ -163,7 +167,7 @@
     if (!_playingControlView)
     {
         _playingControlView = [[PLTPPlayListenView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT - 60 - (iSIPhoneX?34:0), SCREEN_WIDTH, 60)];
-        _playingControlView.backgroundColor = RGB(247, 247, 247);
+        _playingControlView.backgroundColor = [[ZZMediator defaultZZMediator] cat_colorWithHexString:@"0xf7f7f7"];
         _playingControlView.delegate = self;
     }
     return _playingControlView;

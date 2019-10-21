@@ -65,7 +65,7 @@
         
         if (indexPath.row == 0) {
             cell.textLabel.text = @"词典释义";
-            cell.textLabel.textColor = [UIColor ltp_colorWithHexString:@"0x666666"];
+            cell.textLabel.textColor = [[ZZMediator defaultZZMediator] cat_colorWithHexString:@"0x666666"];
         } else {
             cell.textLabel.text = self.model.basic.explains[indexPath.row-1];
             cell.textLabel.textColor = [UIColor blackColor];
@@ -105,7 +105,7 @@
         _tableView = [[UITableView alloc] initWithFrame:self.bounds style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
-        _tableView.backgroundColor = [UIColor ltp_colorWithHexString:@"0xf4f7f9"];
+        _tableView.backgroundColor = [[ZZMediator defaultZZMediator] cat_colorWithHexString:@"0xf4f7f9"];
         _tableView.showsVerticalScrollIndicator = NO;
         _tableView.showsHorizontalScrollIndicator = NO;
         _tableView.estimatedRowHeight = UITableViewAutomaticDimension;

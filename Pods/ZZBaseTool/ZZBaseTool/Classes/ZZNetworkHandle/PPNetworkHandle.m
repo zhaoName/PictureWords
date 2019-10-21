@@ -7,6 +7,7 @@
 //
 
 #import "PPNetworkHandle.h"
+#import "AFNetworking.h"
 
 @implementation PPNetworkHandle
 

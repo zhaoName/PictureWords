@@ -7,7 +7,6 @@
 //
 
 #import "LTPPwdTableViewController.h"
-#import "NSString+LTPCheck.h"
 #import "LTPMainTabBarController.h"
 #import "LTPInfoTableViewController.h"
 
@@ -31,16 +30,16 @@
 
 - (IBAction)ltp_touchFinishBtn:(UIButton *)sender
 {
-    if (![NSString ltp_checkPassword:self.pwdTF.text]) {
-        [self ltp_showNormalHudWithMessage:@"请输入正确格式的密码！" autoHiddenAfterTime:2.0];
+    if (![[ZZMediator defaultZZMediator] cat_checkPwd:self.pwdTF.text]) {
+        [[ZZMediator defaultZZMediator] cat_showTextHudWithMeeage:@"请输入正确格式的密码！" autoHide:2.0 view:self.view];
         return;
     }
     if (![self.confirmPwdTF.text isEqualToString:self.pwdTF.text]) {
-        [self ltp_showNormalHudWithMessage:@"两次输入的密码不一样" autoHiddenAfterTime:2.0];
+        [[ZZMediator defaultZZMediator] cat_showTextHudWithMeeage:@"两次输入的密码不一样" autoHide:2.0 view:self.view];
         return;
     }
 
-    [self ltp_showNormalHudWithMessage:self.isReset ? @"重置成功" : @"登录成功！" autoHiddenAfterTime:2.0];
+    [[ZZMediator defaultZZMediator] cat_showTextHudWithMeeage:self.isReset ? @"重置成功" : @"登录成功！" autoHide:2.0 view:self.view];
     [[NSUserDefaults standardUserDefaults] setObject:self.phone forKey:kLTPWordsPhone];
     [[NSUserDefaults standardUserDefaults] setObject:self.pwdTF.text forKey:kLTPWordsPwd];
     [[NSUserDefaults standardUserDefaults] synchronize];

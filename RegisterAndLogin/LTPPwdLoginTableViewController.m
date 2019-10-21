@@ -7,7 +7,6 @@
 //
 
 #import "LTPPwdLoginTableViewController.h"
-#import "NSString+LTPCheck.h"
 #import "LTPMainTabBarController.h"
 
 @interface LTPPwdLoginTableViewController ()
@@ -41,12 +40,12 @@
 }
 - (IBAction)lyp_touchLoginBtn:(UIButton *)sender
 {
-    if (![NSString ltp_checkTelNumber:self.pwd_phoneTF.text]) {
-        [self ltp_showNormalHudWithMessage:@"请输入正确的手机号！" autoHiddenAfterTime:2.0];
+    if (![[ZZMediator defaultZZMediator] cat_checkPhone:self.pwd_phoneTF.text]) {
+        [[ZZMediator defaultZZMediator] cat_showTextHudWithMeeage:@"请输入正确的手机号！" autoHide:2.0 view:self.view];
         return;
     }
-    if (![NSString ltp_checkPassword:self.pwd_codeTF.text]) {
-        [self ltp_showNormalHudWithMessage:@"请输入正确格式的密码!" autoHiddenAfterTime:2.0];
+    if (![[ZZMediator defaultZZMediator] cat_checkPwd:self.pwd_codeTF.text]) {
+        [[ZZMediator defaultZZMediator] cat_showTextHudWithMeeage:@"请输入正确格式的密码!" autoHide:2.0 view:self.view];
         return;
     }
     
@@ -60,7 +59,7 @@
         [self ltp_loginSuccess];
     }
     else {
-        [self ltp_showNormalHudWithMessage:@"账号或密码错误！！！" autoHiddenAfterTime:2.0];
+        [[ZZMediator defaultZZMediator] cat_showTextHudWithMeeage:@"账号或密码错误！！！" autoHide:2.0 view:self.view];
     }
 }
 
@@ -69,10 +68,10 @@
     [[NSUserDefaults standardUserDefaults] setObject:self.pwd_phoneTF.text forKey:kLTPWordsPhone];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
-    [self ltp_showActivityIndicatorViewWithMessage:@""];
+    [[ZZMediator defaultZZMediator] cat_showIndicatorHUDWithMessage:@"" view:self.view];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
-        [self ltp_hiddenActivityIndicatorView];
+        [[ZZMediator defaultZZMediator] cat_hideIndicatorHUD:self.view];
         [UIApplication sharedApplication].keyWindow.rootViewController = [[LTPMainTabBarController alloc] init];
     });
 }

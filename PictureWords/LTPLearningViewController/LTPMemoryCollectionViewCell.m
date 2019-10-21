@@ -101,7 +101,7 @@
 {
     if (!_enNameLabel) {
         _enNameLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-        _enNameLabel.textColor = [UIColor ltp_mainRedColor];
+        _enNameLabel.textColor = [[ZZMediator defaultZZMediator] cat_colorWithHexString:@"0x44BB88"];
         _enNameLabel.font = [UIFont boldSystemFontOfSize:20];
     }
     return _enNameLabel;
@@ -121,7 +121,7 @@
 {
     if (!_typeLabel) {
         _typeLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-        _typeLabel.textColor = UIColorWithHex(0x999999);
+        _typeLabel.textColor = [[ZZMediator defaultZZMediator] cat_colorWithHexString:@"0x999999"];
         _typeLabel.font = [UIFont systemFontOfSize:12];
     }
     return _typeLabel;
@@ -151,7 +151,7 @@
 {
     if (!_enSenLabel) {
         _enSenLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-        _enSenLabel.textColor = UIColorWithHex(0x666666);
+        _enSenLabel.textColor = [[ZZMediator defaultZZMediator] cat_colorWithHexString:@"0x666666"];
         _enSenLabel.font = [UIFont systemFontOfSize:14];
         _enSenLabel.numberOfLines = 2;
     }
@@ -162,7 +162,7 @@
 {
     if (!_chSenLabel) {
         _chSenLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-        _chSenLabel.textColor = UIColorWithHex(0x666666);
+        _chSenLabel.textColor = [[ZZMediator defaultZZMediator] cat_colorWithHexString:@"0x666666"];
         _chSenLabel.font = [UIFont systemFontOfSize:14];
         _chSenLabel.numberOfLines = 2;
     }

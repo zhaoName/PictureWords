@@ -14,7 +14,6 @@
 #import <MJExtension.h>
 #import <Masonry.h>
 #import "LTPTextView.h"
-#import "PPNetworkHandle.h"
 
 @interface PPTransDetailViewController ()<UITableViewDelegate, UITableViewDataSource, UITextViewDelegate>
 
@@ -86,14 +85,21 @@
     NSString *sign = [NSString stringWithFormat:@"099029538406b650%@9961NZHD4nloIg9tdLPlQ8qVzNd99ON8i3W", content];
     NSDictionary *param = @{@"q":[NSString stringWithFormat:@"%@", content], @"from":@"auto", @"to":@"auto", @"salt":@"996", @"appKey":@"099029538406b650", @"sign":[[self ltp_MD5Encrypt:sign] uppercaseString]};
     
-    [PPNetworkHandle ltp_POST:@"http://openapi.youdao.com/api" parameters:param success:^(NSURLSessionDataTask *task, id responeData) {
-        
+    [[ZZMediator defaultZZMediator] cat_postRequestWithUrl:@"http://openapi.youdao.com/api" params:param success:^(id  _Nonnull responeData) {
         self.model = [PPTransDetailModel mj_objectWithKeyValues:responeData];
         [self updateUI];
         [self ltp_saveTransContent];
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+    } failure:^(NSError * _Nonnull error) {
         NSLog(@"error:%@", error.localizedDescription);
     }];
+//    [PPNetworkHandle ltp_POST:@"http://openapi.youdao.com/api" parameters:param success:^(NSURLSessionDataTask *task, id responeData) {
+//
+//        self.model = [PPTransDetailModel mj_objectWithKeyValues:responeData];
+//        [self updateUI];
+//        [self ltp_saveTransContent];
+//    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+//        NSLog(@"error:%@", error.localizedDescription);
+//    }];
 }
 
 - (NSString *)ltp_MD5Encrypt:(NSString *)str
@@ -258,7 +264,7 @@
         _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.tv.frame), SCREEN_WIDTH, SCREEN_HEIGHT - CGRectGetMaxY(self.tv.frame)) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
-        _tableView.backgroundColor = [UIColor ltp_colorWithHexString:@"0xf4f7f9"];
+        _tableView.backgroundColor = [[ZZMediator defaultZZMediator] cat_colorWithHexString:@"0xf4f7f9"];
         _tableView.showsVerticalScrollIndicator = NO;
         _tableView.showsHorizontalScrollIndicator = NO;
         _tableView.tableFooterView = [UIView new];

@@ -7,12 +7,10 @@
 //
 
 #import "LTPClipAvaterViewController.h"
-#import "ClipImageView.h"
-#import "UIColor+LTPColor.h"
 
 @interface LTPClipAvaterViewController ()
 
-@property (nonatomic, strong) ClipImageView *clipImageView; /**< 需要裁剪的图片*/
+@property (nonatomic, strong) UIView *avatorView;/**< */
 
 @end
 
@@ -22,9 +20,11 @@
     [super viewDidLoad];
     
     self.navigationItem.title =  @"头像裁剪";
-    self.clipImageView.clipImage = self.needClipImage;
     self.view.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:self.clipImageView];
+    
+    UIColor *lineColor = [[ZZMediator defaultZZMediator] cat_colorWithHexString:@"0x44BB88"];
+    self.avatorView = [[ZZMediator defaultZZMediator] cat_initClipView:CGRectMake(0, 80, SCREEN_WIDTH, 400) type:0 image:self.needClipImage midLineColor:lineColor];
+    [self.view addSubview:self.avatorView];
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"取消" style:UIBarButtonItemStylePlain target:self action:@selector(cancelClipImage:)];
     self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc] initWithTitle:@"完成" style:UIBarButtonItemStylePlain target:self action:@selector(successClipImage:)];
@@ -40,7 +40,7 @@
 // 裁剪成功
 - (void)successClipImage:(UIBarButtonItem *)sender
 {
-    UIImage *clipedImage = [self.clipImageView getClipedImage];
+    UIImage *clipedImage = [[ZZMediator defaultZZMediator] cat_clipedImage:self.avatorView];
     if([self.delegate respondsToSelector:@selector(didSuccessClipImage:)]) {
         [self.delegate didSuccessClipImage:clipedImage];
     }
@@ -55,18 +55,6 @@
 }
 
 #pragma mark -- getter
-
-- (ClipImageView *)clipImageView
-{
-    if(!_clipImageView)
-    {
-        _clipImageView = [ClipImageView initWithFrame:CGRectMake(0, 80, SCREEN_WIDTH, 400)];
-        _clipImageView.midLineColor = [UIColor ltp_mainRedColor];
-        _clipImageView.clipType = ClipAreaViewTypeRect;
-    }
-    return _clipImageView;
-}
-
 
 
 @end

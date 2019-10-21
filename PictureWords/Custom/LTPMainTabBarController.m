@@ -8,7 +8,7 @@
 
 #import "LTPMainTabBarController.h"
 #import "LTPMainNavigationController.h"
-#import "LTPHomeViewController.h"
+#import "ZZMediator+PictureWords.h"
 #import "PPTranslateViewController.h"
 #import "LTPSetTableViewController.h"
 
@@ -40,14 +40,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tabBar.barTintColor = [UIColor whiteColor];
-    NSArray <Class>*vcClassArr = @[
-                                   [LTPHomeViewController class],
+    NSArray *vcClassArr = @[
+                                   [[ZZMediator defaultZZMediator] zz_fectchHomeVC],
                                    [PPTranslateViewController class],
                                    [LTPSetTableViewController class],
                                    //[LTPProgressViewController class]
                                    ];
-    UIColor *defaultColor = UIColorWithHex(0xbfbfbf);
-    UIColor *selectedColor = [UIColor ltp_mainRedColor];
+    UIColor *defaultColor = [[ZZMediator defaultZZMediator] cat_colorWithHexString:@"0xbfbfbf"];
+    UIColor *selectedColor = [[ZZMediator defaultZZMediator] cat_colorWithHexString:@"0x44BB88"];
     NSArray <NSString *>*nameArr = @[@"学单词", @"翻译", @"我的"];
     NSArray <UIImage *>*defaultImages = @[
                                           [UIImage imageNamed:@"memory_normal"],
@@ -63,9 +63,15 @@
                                            ];
     NSMutableArray *viewcontrollers = [NSMutableArray array];
     for (int i = 0; i < vcClassArr.count; i++) {
-        UIViewController *vc = [[vcClassArr[i] alloc] init];
-        if (i == 2) {
+        UIViewController *vc = nil;
+        if (i == 0) {
+            vc = vcClassArr[0];
+        }
+        else if (i == 2) {
             vc = [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateViewControllerWithIdentifier:@"LTPSetTableViewController"];
+        }
+        else {
+            vc = [[vcClassArr[i] alloc] init];
         }
         LTPMainNavigationController *root = [[LTPMainNavigationController alloc] initWithRootViewController:vc];
         root.tabBarItem = [[MainTabBarItem alloc] initWithTitle:nameArr[i] image:defaultImages[i] selectedImage:selectedImages[i] titleColor:defaultColor selectedTitleColor:selectedColor];
