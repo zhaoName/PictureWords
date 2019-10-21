@@ -9,7 +9,6 @@
 #import "LTPTestViewController.h"
 #import "LTPReviewViewController.h"
 #import "PPListViewController.h"
-#import "PPCustomPresentationController.h"
 #import "LTPCollectionViewController.h"
 #import "LTPProgressViewController.h"
 
@@ -30,7 +29,7 @@
     [self.view addSubview:_tableview];
     self.tableview.delegate = self;
     self.tableview.dataSource = self ;
-    self.tableview.separatorColor = UIColorWithHex(0xbfbfbf);
+    self.tableview.separatorColor = [[ZZMediator defaultZZMediator] cat_colorWithHexString:@"0xbfbfbf"];
     self.tableview.rowHeight = 50 ;
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"review_result"] style:UIBarButtonItemStylePlain target:self action:@selector(touchProgressRightItem)];

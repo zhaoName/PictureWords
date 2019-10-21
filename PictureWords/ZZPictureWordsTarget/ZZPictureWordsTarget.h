@@ -1,8 +1,8 @@
 //
-//  UIImage+LTPOrien.h
+//  ZZPictureWordsTarget.h
 //  PictureWords
 //
-//  Created by zhao on 2019/9/11.
+//  Created by zhao on 2019/10/17.
 //  Copyright © 2019 english. All rights reserved.
 //
 
@@ -10,12 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIImage (LTPOrien)
+@interface ZZPictureWordsTarget : NSObject
 
-/**
- * 调整图片的方向
- */
-- (UIImage *)fixOrientation;
 
 
 @end

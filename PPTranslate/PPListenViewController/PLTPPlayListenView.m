@@ -173,7 +173,7 @@
     if (!_progressView)
     {
         _progressView = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleDefault];
-        _progressView.progressTintColor = [UIColor ltp_colorWithHexString:@"0x44bb88"];
+        _progressView.progressTintColor = [[ZZMediator defaultZZMediator] cat_colorWithHexString:@"0x44bb88"];
     }
     return _progressView;
 }

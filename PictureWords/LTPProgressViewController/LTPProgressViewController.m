@@ -27,7 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"测试结果";
-    self.view.backgroundColor = UIColorWithHex(0xefefef);
+    self.view.backgroundColor = [[ZZMediator defaultZZMediator] cat_colorWithHexString:@"0xefefef"];
     
     [self.view addSubview:self.collectionView];
     [self.collectionView registerNib:[UINib nibWithNibName:@"ImproveCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"ImproveCollectionViewCell"];
@@ -104,7 +104,7 @@
     
     UILabel *tipLabel = [[UILabel alloc] initWithFrame:CGRectZero];
     tipLabel.text = @"您还未参加过测试！";
-    tipLabel.textColor = [UIColor ltp_colorWithHexString:@"0x666666"];
+    tipLabel.textColor = [[ZZMediator defaultZZMediator] cat_colorWithHexString:@"0x666666"];
     tipLabel.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:tipLabel];
     [tipLabel mas_makeConstraints:^(MASConstraintMaker *make) {

@@ -9,7 +9,6 @@
 #import "LTPPlayMusicHandle.h"
 #import <MJExtension.h>
 #import "LTPListenModel.h"
-#import "UIViewController+LTPHUD.h"
 
 static LTPPlayMusicHandle *_tool = nil;
 @interface LTPPlayMusicHandle ()<AVAudioPlayerDelegate>
@@ -55,7 +54,7 @@ static LTPPlayMusicHandle *_tool = nil;
     NSString *musicPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
     musicPath = [musicPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.m4a", name]];
     
-    [[UIApplication sharedApplication].keyWindow.rootViewController ltp_showActivityIndicatorViewWithMessage:nil];
+    [[ZZMediator defaultZZMediator] cat_showIndicatorHUDWithMessage:@"" view:nil];
     dispatch_group_t group = dispatch_group_create();
     dispatch_group_async(group, dispatch_get_global_queue(0, 0), ^{
         NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:url]];
@@ -72,7 +71,7 @@ static LTPPlayMusicHandle *_tool = nil;
         if (error) {
             NSLog(@"%@", error.localizedDescription);
         }
-        [[UIApplication sharedApplication].keyWindow.rootViewController ltp_hiddenActivityIndicatorView];
+        [[ZZMediator defaultZZMediator] cat_hideIndicatorHUD:nil];
         [[NSNotificationCenter defaultCenter] postNotificationName:@"MusicLoadFinish" object:nil];
     });
 }

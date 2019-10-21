@@ -8,7 +8,6 @@
 
 #import "LTPInfoTableViewController.h"
 #import "LTPClipAvaterViewController.h"
-#import "UIImage+LTPOrien.h"
 #import "LTPMainTabBarController.h"
 
 @interface LTPInfoTableViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate, LTPClipAvaterViewControllerDelegate>
@@ -41,7 +40,7 @@
 - (IBAction)ltp_clickFinishBtn:(UIButton *)sender
 {
     if (self.nickNameTF.text.length == 0) {
-        [self ltp_showNormalHudWithMessage:@"请设置昵称..." autoHiddenAfterTime:1.0];
+        [[ZZMediator defaultZZMediator] cat_showTextHudWithMeeage:@"请设置昵称..." autoHide:2.0 view:self.view];
         return;
     }
     [[NSUserDefaults standardUserDefaults] setObject:self.nickNameTF.text forKey:kLTPWordsNickName];
@@ -91,7 +90,7 @@
 {
     LTPClipAvaterViewController *clipAvatarVC = [[LTPClipAvaterViewController alloc] init];
     clipAvatarVC.delegate = self;
-    clipAvatarVC.needClipImage = [info[UIImagePickerControllerOriginalImage] fixOrientation];
+    clipAvatarVC.needClipImage = [[ZZMediator defaultZZMediator] cat_getImageFixOrientation:info[UIImagePickerControllerOriginalImage]];
     [picker pushViewController:clipAvatarVC animated:YES];
 }
 

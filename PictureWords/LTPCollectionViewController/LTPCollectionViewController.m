@@ -29,7 +29,7 @@
     self.tableview.delegate = self ;
     self.tableview.dataSource = self ;
     self.tableview.tableFooterView = [UIView new];
-    self.tableview.separatorColor = UIColorWithHex(0xbfbfbf);
+    self.tableview.separatorColor = [[ZZMediator defaultZZMediator] cat_colorWithHexString:@"0xbfbfbf"];
     self.tableview.rowHeight = 50 ;
 }
 

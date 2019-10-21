@@ -146,7 +146,7 @@
     UIButton *moreBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     moreBtn.frame = CGRectMake(SCREEN_WIDTH - 70, 10, 50, 30);
     [moreBtn setTitle:(section== 1) ? @"More >":nil forState:UIControlStateNormal];
-    [moreBtn setTitleColor:[UIColor ltp_colorWithHexString:@"999999"] forState:UIControlStateNormal];
+    [moreBtn setTitleColor:[[ZZMediator defaultZZMediator] cat_colorWithHexString:@"999999"] forState:UIControlStateNormal];
     moreBtn.titleLabel.font = [UIFont systemFontOfSize:14];
     moreBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
     [conView addSubview:moreBtn];

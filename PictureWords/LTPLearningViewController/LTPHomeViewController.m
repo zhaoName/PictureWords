@@ -48,13 +48,13 @@
     
     [self addBarButtonItem];
     
-    [self ltp_showActivityIndicatorViewWithMessage:@""];
+    [[ZZMediator defaultZZMediator] cat_showIndicatorHUDWithMessage:@"" view:self.view];
     BmobQuery *query = [BmobQuery queryWithClassName:@"LearnWord"];
     query.cachePolicy = kBmobCachePolicyNetworkElseCache;
     [query orderByAscending:@"createdAt"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
 
-        [self ltp_hiddenActivityIndicatorView];
+        [[ZZMediator defaultZZMediator] cat_hideIndicatorHUD:self.view];
         self.dataSouces = [array mutableCopy];
         [self.tableview reloadData];
     }];

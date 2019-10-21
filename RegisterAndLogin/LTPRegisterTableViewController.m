@@ -9,7 +9,6 @@
 #import "LTPRegisterTableViewController.h"
 #import <SMS_SDK/SMSSDK.h>
 #import "LTPTimer.h"
-#import "NSString+LTPCheck.h"
 #import "LTPPwdTableViewController.h"
 
 @interface LTPRegisterTableViewController ()
@@ -56,17 +55,17 @@
 
 - (IBAction)ltp_clickSendCodeBtn:(id)sender
 {
-    if (![NSString ltp_checkTelNumber:self.re_phoneTF.text]) {
-        [self ltp_showNormalHudWithMessage:@"请输入正确的手机号！" autoHiddenAfterTime:2.0];
+    if (![[ZZMediator defaultZZMediator] cat_checkPhone:self.re_phoneTF.text]) {
+        [[ZZMediator defaultZZMediator] cat_showTextHudWithMeeage:@"请输入正确的手机号！" autoHide:2.0 view:self.view];
         return;
     }
     [SMSSDK getVerificationCodeByMethod:SMSGetCodeMethodSMS phoneNumber:self.re_phoneTF.text zone:@"86" result:^(NSError *error) {
         if (!error) {
-            [self ltp_showNormalHudWithMessage:@"验证码发送成功!" autoHiddenAfterTime:2.0];
+            [[ZZMediator defaultZZMediator] cat_showTextHudWithMeeage:@"验证码发送成功!" autoHide:2.0 view:self.view];
             [LTPTimer startTimerWithKey:@"Register" andTimeBtn:self.re_sendCodeBtn];
         }
         else {
-            [self ltp_showNormalHudWithMessage:@"网络出错，请检查网络后重试!" autoHiddenAfterTime:2.0];
+            [[ZZMediator defaultZZMediator] cat_showTextHudWithMeeage:@"网络出错，请检查网络后重试!" autoHide:2.0 view:self.view];
         }
     }];
 }
@@ -74,18 +73,18 @@
 
 - (IBAction)ltp_clickRegisterBtn:(UIButton *)sender
 {
-    if (![NSString ltp_checkTelNumber:self.re_phoneTF.text]) {
-        [self ltp_showNormalHudWithMessage:@"请输入正确的手机号！" autoHiddenAfterTime:2.0];
+    if (![[ZZMediator defaultZZMediator] cat_checkPhone:self.re_phoneTF.text]) {
+        [[ZZMediator defaultZZMediator] cat_showTextHudWithMeeage:@"请输入正确的手机号！" autoHide:2.0 view:self.view];
         return;
     }
     if (self.re_codeTF.text.length < 3) {
-        [self ltp_showNormalHudWithMessage:@"请输入正确格式的验证码！" autoHiddenAfterTime:2.0];
+        [[ZZMediator defaultZZMediator] cat_showTextHudWithMeeage:@"请输入正确格式的验证码！" autoHide:2.0 view:self.view];
         return;
     }
 
-    [self ltp_showActivityIndicatorViewWithMessage:@""];
+    [[ZZMediator defaultZZMediator] cat_showIndicatorHUDWithMessage:@"" view:self.view];
     [SMSSDK commitVerificationCode:self.re_codeTF.text phoneNumber:self.re_phoneTF.text zone:@"86" result:^(NSError *error) {
-        [self ltp_hiddenActivityIndicatorView];
+        [[ZZMediator defaultZZMediator] cat_hideIndicatorHUD:self.view];
         if (!error) {
             // 验证成功
             [[NSUserDefaults standardUserDefaults] setObject:self.re_phoneTF.text forKey:kLTPWordsPhone];
@@ -97,7 +96,7 @@
             [self.navigationController pushViewController:pwd animated:nil];
         }
         else {
-            [self ltp_showNormalHudWithMessage:@"验证码错误，请重试！" autoHiddenAfterTime:2.0];
+            [[ZZMediator defaultZZMediator] cat_showTextHudWithMeeage:@"验证码错误，请重试！" autoHide:2.0 view:self.view];
         }
     }];
 }

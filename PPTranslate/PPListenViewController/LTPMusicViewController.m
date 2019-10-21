@@ -172,7 +172,7 @@
 - (void)ltp_setupSubviewsProperty
 {
     self.musicModel = [LTPPlayMusicHandle ltp_shareMusicTool].musicArray[[LTPPlayMusicHandle ltp_shareMusicTool].currentIndex];
-    self.view.backgroundColor = RGB(237, 237, 237);
+    self.view.backgroundColor = [[ZZMediator defaultZZMediator] cat_colorWithHexString:@"0xededed"];
     self.navigationItem.title = [self.musicModel.title substringFromIndex:9];
     // 设置子控件
     self.currentTimeLabel.text = [self getFormatTimeWithTimeInterval:[LTPPlayMusicHandle ltp_shareMusicTool].currntMusicPlayTime];
@@ -340,7 +340,7 @@
     if (!_singerLabel)
     {
         _singerLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-        _singerLabel.textColor = RGB(100, 100, 100);
+        _singerLabel.textColor = [[ZZMediator defaultZZMediator] cat_colorWithHexString:@"0x646464"];
         _singerLabel.textAlignment = NSTextAlignmentCenter;
         _singerLabel.font = [UIFont systemFontOfSize:13];
     }
@@ -378,7 +378,7 @@
     if (!_progressSlider)
     {
         _progressSlider = [[UISlider alloc] initWithFrame:CGRectZero];
-        _progressSlider.minimumTrackTintColor = [UIColor ltp_colorWithHexString:@"0x44bb88"];
+        _progressSlider.minimumTrackTintColor = [[ZZMediator defaultZZMediator] cat_colorWithHexString:@"0x44bb88"];
         [_progressSlider setThumbImage:[UIImage imageNamed:@"slider"] forState:UIControlStateNormal];
         [_progressSlider setThumbImage:[UIImage imageNamed:@"slider"] forState:UIControlStateSelected];
         

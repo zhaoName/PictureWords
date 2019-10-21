@@ -10,7 +10,7 @@
 
 @implementation UIImage (LTPOrien)
 
-- (UIImage *)fixOrientation
+- (UIImage *)ltp_fixOrientation
 {
     if (self.imageOrientation == UIImageOrientationUp) return self;
     CGAffineTransform transform = CGAffineTransformIdentity;
@@ -81,6 +81,19 @@
     CGContextRelease(ctx);
     CGImageRelease(cgimg);
     return img;
+}
+
+
++ (UIImage *)ltp_imageWithName:(NSString *)imageName
+{
+    // 图片全名，@2x @3x 也要带上
+    imageName = [NSString stringWithFormat:@"%@@%dx.png", imageName, (int)[UIScreen mainScreen].scale];
+    NSBundle *bundle = [NSBundle bundleForClass:self.class];
+    NSString *zzBaseBunleName = bundle.infoDictionary[@"CFBundleName"];
+    NSString *baseDirectory = [NSString stringWithFormat:@"%@.bundle", zzBaseBunleName];
+    
+    NSString *path = [bundle pathForResource:imageName ofType:nil inDirectory:baseDirectory];
+    return [UIImage imageWithContentsOfFile:path];
 }
 
 

@@ -35,7 +35,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = UIColorWithHex(0xefefef);
+    self.view.backgroundColor = [[ZZMediator defaultZZMediator] cat_colorWithHexString:@"0xefefef"];
     self.navigationItem.title = @"测试";
     
     self.datasource = [[LTPLearnWordModel mj_objectArrayWithFilename:@"EnglishData.plist"][self.showReviewIndex] mutableCopy];
@@ -271,7 +271,7 @@
 {
     if (_resultView == nil) {
         _resultView = [[UIView alloc] initWithFrame:self.view.bounds];
-        _resultView.backgroundColor = UIColorWithHexAndAlpha(0x000000, 1);
+        _resultView.backgroundColor = [[ZZMediator defaultZZMediator] cat_colorWithHexString:@"0x000000"];
         [self.view addSubview:_resultView];
         LTPCollectionViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([LTPCollectionViewCell class]) owner:nil options:nil] lastObject];
         [_resultView addSubview:cell];

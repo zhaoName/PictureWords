@@ -21,7 +21,7 @@
     [super viewDidLoad];
     
     self.navigationItem.title = @"改进意见";
-    self.view.backgroundColor = UIColorWithHex(0xf4f7f9);
+    self.view.backgroundColor = [[ZZMediator defaultZZMediator] cat_colorWithHexString:@"0xf4f7f9"];
     
     [self.view addSubview:self.suggestTextView];
     if ([self respondsToSelector:@selector(setAutomaticallyAdjustsScrollViewInsets:)]) {
@@ -34,16 +34,16 @@
 - (void)commitSuggestToUs:(UIBarButtonItem *)sender
 {
     if (self.suggestTextView.text.length == 0)  {
-        [self ltp_showNormalHudWithMessage:@"亲,您还未给出您的宝贵意见哦~" autoHiddenAfterTime:2.0];
+        [[ZZMediator defaultZZMediator] cat_showTextHudWithMeeage:@"亲,您还未给出您的宝贵意见哦~" autoHide:2.0 view:self.view];
         return;
     }
     
-    [self ltp_showActivityIndicatorViewWithMessage:@"提交中..."];
+    [[ZZMediator defaultZZMediator] cat_showIndicatorHUDWithMessage:@"提交中..." view:self.view];
     [self.suggestTextView resignFirstResponder];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
-        [self ltp_hiddenActivityIndicatorView];
-        [self ltp_showNormalHudWithMessage:@"谢谢您的宝贵建议！" autoHiddenAfterTime:2.0];
+        [[ZZMediator defaultZZMediator] cat_hideIndicatorHUD:self.view];
+        [[ZZMediator defaultZZMediator] cat_showTextHudWithMeeage:@"谢谢您的宝贵建议！" autoHide:2.0 view:self.view];
         
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [self.navigationController popViewControllerAnimated:YES];

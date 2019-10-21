@@ -11,7 +11,7 @@
 @interface UIColor (LTPColor)
 
 /**
- * 主色调 0x44bb88
+ * 主色调 0x44bb88   E74C3C
  */
 + (UIColor *)ltp_mainRedColor;
 

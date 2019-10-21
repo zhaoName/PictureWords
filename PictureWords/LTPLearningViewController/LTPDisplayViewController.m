@@ -55,7 +55,7 @@
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.backgroundColor = [UIColor clearColor];
     cell.textLabel.text = self.dataArray[indexPath.row];
-    cell.textLabel.textColor = [UIColor ltp_mainRedColor];
+    cell.textLabel.textColor = [[ZZMediator defaultZZMediator] cat_colorWithHexString:@"0x44BB88"];
     cell.textLabel.font = [UIFont systemFontOfSize:18];
     return cell;
 }
