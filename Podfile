@@ -18,7 +18,9 @@ pod 'mob_smssdk'
 pod 'BmobSDK'
 pod 'SDWebImage'
 
+
 pod 'ZZBaseTool'
+pod 'ZZMediator'
 
 end
 

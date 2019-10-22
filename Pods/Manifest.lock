@@ -25,15 +25,27 @@ PODS:
   - SDWebImage (5.1.0):
     - SDWebImage/Core (= 5.1.0)
   - SDWebImage/Core (5.1.0)
-  - ZZBaseTool (0.0.1):
-    - ZZBaseTool/ZZCategary (= 0.0.1)
-    - ZZBaseTool/ZZClipAvator (= 0.0.1)
-    - ZZBaseTool/ZZNetwotkHandle (= 0.0.1)
-  - ZZBaseTool/ZZCategary (0.0.1):
+  - ZZBaseTool (0.0.2):
+    - ZZBaseTool/ZZCategary (= 0.0.2)
+    - ZZBaseTool/ZZClipAvator (= 0.0.2)
+    - ZZBaseTool/ZZNetwotkHandle (= 0.0.2)
+  - ZZBaseTool/ZZCategary (0.0.2):
     - MBProgressHUD (~> 1.1.0)
-  - ZZBaseTool/ZZClipAvator (0.0.1)
-  - ZZBaseTool/ZZNetwotkHandle (0.0.1):
+  - ZZBaseTool/ZZClipAvator (0.0.2)
+  - ZZBaseTool/ZZNetwotkHandle (0.0.2):
     - AFNetworking (~> 3.0)
+  - ZZMediator (0.0.4):
+    - ZZMediator/Mediator (= 0.0.4)
+    - "ZZMediator/ZZMediator+PictureWords (= 0.0.4)"
+    - "ZZMediator/ZZMediator+ZZBaseTool (= 0.0.4)"
+    - "ZZMediator/ZZMediator+ZZLogin (= 0.0.4)"
+  - ZZMediator/Mediator (0.0.4)
+  - "ZZMediator/ZZMediator+PictureWords (0.0.4)":
+    - ZZMediator/Mediator
+  - "ZZMediator/ZZMediator+ZZBaseTool (0.0.4)":
+    - ZZMediator/Mediator
+  - "ZZMediator/ZZMediator+ZZLogin (0.0.4)":
+    - ZZMediator/Mediator
 
 DEPENDENCIES:
   - BmobSDK
@@ -43,6 +55,7 @@ DEPENDENCIES:
   - mob_smssdk
   - SDWebImage
   - ZZBaseTool
+  - ZZMediator
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -57,6 +70,7 @@ SPEC REPOS:
     - SDWebImage
   https://github.com/zhaoName/ZZPrivateSpecs.git:
     - ZZBaseTool
+    - ZZMediator
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
@@ -68,8 +82,9 @@ SPEC CHECKSUMS:
   mob_smssdk: cdb6a31d4fd4667ed928e2eca03f21ad89ebc05c
   MOBFoundation: b5ff4038ddb9a0f06b685b86408f905a10aa147c
   SDWebImage: fb387001955223213dde14bc08c8b73f371f8d8f
-  ZZBaseTool: 3643091e2e1956ecaae648cd0e568e7e4812e6b1
+  ZZBaseTool: 671809b3c2dbec4f97b63e8233be5711a13e0809
+  ZZMediator: a2bc43369d24ac20da59be2ab7cd9c920ab77ded
 
-PODFILE CHECKSUM: 92b2b009703ca8ef9bb96b98f84996941409d4e2
+PODFILE CHECKSUM: d22b1347d78bca51c3a8be15c1e4afe72f69ba72
 
 COCOAPODS: 1.7.5

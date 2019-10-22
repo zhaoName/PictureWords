@@ -12,7 +12,6 @@
 #import "PPObviouslyEffectFlowLayout.h"
 #import <MJRefresh.h>
 #import <Masonry.h>
-#import "UIColor+LTPColor.h"
 
 @interface LTPProgressViewController ()<UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
