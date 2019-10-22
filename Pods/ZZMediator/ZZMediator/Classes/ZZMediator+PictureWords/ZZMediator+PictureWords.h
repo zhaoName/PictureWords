@@ -16,8 +16,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (UIViewController *)zz_fectchHomeVC;
 
-- (UIColor *)color:(NSString *)colorHex;
-
 
 @end
 

@@ -15,10 +15,4 @@
     return [self zz_preformTagert:@"ZZPictureWordsTarget" action:@"zz_pwtFetchHomeVC" params:@{} shouldCache:NO];
 }
 
-
-- (UIColor *)color:(NSString *)colorHex
-{
-    return [self zz_preformTagert:@"ZZPictureWordsTarget" action:@"zz_mainColor" params:@{} shouldCache:NO];
-}
-
 @end
