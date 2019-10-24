@@ -10,7 +10,6 @@
 		3A566D796CA7B3338F42221E /* libPods-PictureWords.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1368D0E1791685F902927210 /* libPods-PictureWords.a */; };
 		9716367C22547984007E3380 /* PPSpeechEnglish.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716367B22547984007E3380 /* PPSpeechEnglish.m */; };
 		9716367E2254798D007E3380 /* EnglishData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9716367D2254798D007E3380 /* EnglishData.plist */; };
-		97163E852255D586007E3380 /* LTPMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97163E842255D586007E3380 /* LTPMainNavigationController.m */; };
 		97163E882255D59C007E3380 /* LTPMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97163E872255D59C007E3380 /* LTPMainTabBarController.m */; };
 		97163E8B2255D5CC007E3380 /* LTPHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97163E8A2255D5CC007E3380 /* LTPHomeViewController.m */; };
 		97163E8E2255D5DD007E3380 /* LTPTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97163E8D2255D5DD007E3380 /* LTPTestViewController.m */; };
@@ -29,13 +28,6 @@
 		FE19B616225DF03D00892E64 /* PPObviouslyEffectFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FE19B615225DF03D00892E64 /* PPObviouslyEffectFlowLayout.m */; };
 		FE19B619225DF06600892E64 /* ImproveCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE19B618225DF06600892E64 /* ImproveCollectionViewCell.m */; };
 		FE19B61B225DF07D00892E64 /* ImproveCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE19B61A225DF07D00892E64 /* ImproveCollectionViewCell.xib */; };
-		FE32E1D22328D73D005677C1 /* LTPPwdLoginTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE32E1D12328D73D005677C1 /* LTPPwdLoginTableViewController.m */; };
-		FE32E1D52328D75D005677C1 /* LTPRegisterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE32E1D42328D75D005677C1 /* LTPRegisterTableViewController.m */; };
-		FE32E1D82328E0A8005677C1 /* LTPCodeLoginTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE32E1D72328E0A8005677C1 /* LTPCodeLoginTableViewController.m */; };
-		FE32E1DE2328E931005677C1 /* LTPTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = FE32E1DD2328E931005677C1 /* LTPTimer.m */; };
-		FE32E1E12328F046005677C1 /* LTPPwdTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE32E1E02328F046005677C1 /* LTPPwdTableViewController.m */; };
-		FE32E1E42328F9B5005677C1 /* LTPInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE32E1E32328F9B5005677C1 /* LTPInfoTableViewController.m */; };
-		FE32E1E72328FD6D005677C1 /* LTPClipAvaterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE32E1E62328FD6D005677C1 /* LTPClipAvaterViewController.m */; };
 		FE32E1F923294C72005677C1 /* LTPSetTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE32E1F823294C72005677C1 /* LTPSetTableViewController.m */; };
 		FE32E1FC232951C8005677C1 /* LTPSuggestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE32E1FB232951C8005677C1 /* LTPSuggestViewController.m */; };
 		FE33498222B1F96600C957D6 /* PPTranslateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE33498122B1F96600C957D6 /* PPTranslateViewController.m */; };
@@ -60,7 +52,6 @@
 		FE3349D322B2427A00C957D6 /* LTPPlayMusicHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3349D222B2427A00C957D6 /* LTPPlayMusicHandle.m */; };
 		FE3349D622B2433700C957D6 /* LTPMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3349D522B2433700C957D6 /* LTPMusicViewController.m */; };
 		FE3349D922B2434F00C957D6 /* LTPMusicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3349D822B2434F00C957D6 /* LTPMusicModel.m */; };
-		FE5AF7B0230A92290078293E /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE5AF7AF230A92290078293E /* Login.storyboard */; };
 		FE6726632358189300FC0D02 /* ZZPictureWordsTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6726622358189300FC0D02 /* ZZPictureWordsTarget.m */; };
 		FE6C8263228A90EF00AAEDA6 /* PPCustomPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6C8262228A90EF00AAEDA6 /* PPCustomPresentationController.m */; };
 		FE6C8266228A915700AAEDA6 /* LTPDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6C8265228A915700AAEDA6 /* LTPDisplayViewController.m */; };
@@ -75,7 +66,6 @@
 		FEC36F522325E87700CE224D /* LTPHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC36F502325E87700CE224D /* LTPHomeTableViewCell.m */; };
 		FEC36F532325E87700CE224D /* LTPHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEC36F512325E87700CE224D /* LTPHomeTableViewCell.xib */; };
 		FEC36F56232625E600CE224D /* LTPHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC36F55232625E600CE224D /* LTPHomeModel.m */; };
-		FED782CA235DFCAB008CF47E /* ZZLoginTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = FED782C9235DFCAB008CF47E /* ZZLoginTarget.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,8 +75,6 @@
 		9716367A22547984007E3380 /* PPSpeechEnglish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSpeechEnglish.h; sourceTree = "<group>"; };
 		9716367B22547984007E3380 /* PPSpeechEnglish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSpeechEnglish.m; sourceTree = "<group>"; };
 		9716367D2254798D007E3380 /* EnglishData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EnglishData.plist; sourceTree = "<group>"; };
-		97163E832255D586007E3380 /* LTPMainNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTPMainNavigationController.h; sourceTree = "<group>"; };
-		97163E842255D586007E3380 /* LTPMainNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTPMainNavigationController.m; sourceTree = "<group>"; };
 		97163E862255D59C007E3380 /* LTPMainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTPMainTabBarController.h; sourceTree = "<group>"; };
 		97163E872255D59C007E3380 /* LTPMainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTPMainTabBarController.m; sourceTree = "<group>"; };
 		97163E892255D5CC007E3380 /* LTPHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTPHomeViewController.h; sourceTree = "<group>"; };
@@ -120,20 +108,6 @@
 		FE19B617225DF06600892E64 /* ImproveCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImproveCollectionViewCell.h; sourceTree = "<group>"; };
 		FE19B618225DF06600892E64 /* ImproveCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImproveCollectionViewCell.m; sourceTree = "<group>"; };
 		FE19B61A225DF07D00892E64 /* ImproveCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImproveCollectionViewCell.xib; sourceTree = "<group>"; };
-		FE32E1D02328D73D005677C1 /* LTPPwdLoginTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTPPwdLoginTableViewController.h; sourceTree = "<group>"; };
-		FE32E1D12328D73D005677C1 /* LTPPwdLoginTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTPPwdLoginTableViewController.m; sourceTree = "<group>"; };
-		FE32E1D32328D75D005677C1 /* LTPRegisterTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTPRegisterTableViewController.h; sourceTree = "<group>"; };
-		FE32E1D42328D75D005677C1 /* LTPRegisterTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTPRegisterTableViewController.m; sourceTree = "<group>"; };
-		FE32E1D62328E0A8005677C1 /* LTPCodeLoginTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTPCodeLoginTableViewController.h; sourceTree = "<group>"; };
-		FE32E1D72328E0A8005677C1 /* LTPCodeLoginTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTPCodeLoginTableViewController.m; sourceTree = "<group>"; };
-		FE32E1DC2328E931005677C1 /* LTPTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTPTimer.h; sourceTree = "<group>"; };
-		FE32E1DD2328E931005677C1 /* LTPTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTPTimer.m; sourceTree = "<group>"; };
-		FE32E1DF2328F046005677C1 /* LTPPwdTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTPPwdTableViewController.h; sourceTree = "<group>"; };
-		FE32E1E02328F046005677C1 /* LTPPwdTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTPPwdTableViewController.m; sourceTree = "<group>"; };
-		FE32E1E22328F9B5005677C1 /* LTPInfoTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTPInfoTableViewController.h; sourceTree = "<group>"; };
-		FE32E1E32328F9B5005677C1 /* LTPInfoTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTPInfoTableViewController.m; sourceTree = "<group>"; };
-		FE32E1E52328FD6D005677C1 /* LTPClipAvaterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTPClipAvaterViewController.h; sourceTree = "<group>"; };
-		FE32E1E62328FD6D005677C1 /* LTPClipAvaterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTPClipAvaterViewController.m; sourceTree = "<group>"; };
 		FE32E1F723294C72005677C1 /* LTPSetTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTPSetTableViewController.h; sourceTree = "<group>"; };
 		FE32E1F823294C72005677C1 /* LTPSetTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTPSetTableViewController.m; sourceTree = "<group>"; };
 		FE32E1FA232951C8005677C1 /* LTPSuggestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTPSuggestViewController.h; sourceTree = "<group>"; };
@@ -177,7 +151,6 @@
 		FE3349D522B2433700C957D6 /* LTPMusicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTPMusicViewController.m; sourceTree = "<group>"; };
 		FE3349D722B2434F00C957D6 /* LTPMusicModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTPMusicModel.h; sourceTree = "<group>"; };
 		FE3349D822B2434F00C957D6 /* LTPMusicModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTPMusicModel.m; sourceTree = "<group>"; };
-		FE5AF7AF230A92290078293E /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		FE6726612358189300FC0D02 /* ZZPictureWordsTarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZPictureWordsTarget.h; sourceTree = "<group>"; };
 		FE6726622358189300FC0D02 /* ZZPictureWordsTarget.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZPictureWordsTarget.m; sourceTree = "<group>"; };
 		FE6C8261228A90EF00AAEDA6 /* PPCustomPresentationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCustomPresentationController.h; sourceTree = "<group>"; };
@@ -205,8 +178,6 @@
 		FEC36F512325E87700CE224D /* LTPHomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LTPHomeTableViewCell.xib; sourceTree = "<group>"; };
 		FEC36F54232625E600CE224D /* LTPHomeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTPHomeModel.h; sourceTree = "<group>"; };
 		FEC36F55232625E600CE224D /* LTPHomeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTPHomeModel.m; sourceTree = "<group>"; };
-		FED782C8235DFCAB008CF47E /* ZZLoginTarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZLoginTarget.h; sourceTree = "<group>"; };
-		FED782C9235DFCAB008CF47E /* ZZLoginTarget.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZLoginTarget.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,7 +206,6 @@
 			children = (
 				97524A41225324DF00A2F878 /* AppDelegate.h */,
 				97524A42225324DF00A2F878 /* AppDelegate.m */,
-				FE5AF7AE230A91E70078293E /* RegisterAndLogin */,
 				FE33497E22B1F92300C957D6 /* PPTranslate */,
 				97524A40225324DF00A2F878 /* PictureWords */,
 				97524A3F225324DF00A2F878 /* Products */,
@@ -380,30 +350,6 @@
 			path = PPListenViewController;
 			sourceTree = "<group>";
 		};
-		FE5AF7AE230A91E70078293E /* RegisterAndLogin */ = {
-			isa = PBXGroup;
-			children = (
-				FE5AF7AF230A92290078293E /* Login.storyboard */,
-				FE32E1D02328D73D005677C1 /* LTPPwdLoginTableViewController.h */,
-				FE32E1D12328D73D005677C1 /* LTPPwdLoginTableViewController.m */,
-				FE32E1D62328E0A8005677C1 /* LTPCodeLoginTableViewController.h */,
-				FE32E1D72328E0A8005677C1 /* LTPCodeLoginTableViewController.m */,
-				FE32E1D32328D75D005677C1 /* LTPRegisterTableViewController.h */,
-				FE32E1D42328D75D005677C1 /* LTPRegisterTableViewController.m */,
-				FE32E1DC2328E931005677C1 /* LTPTimer.h */,
-				FE32E1DD2328E931005677C1 /* LTPTimer.m */,
-				FE32E1DF2328F046005677C1 /* LTPPwdTableViewController.h */,
-				FE32E1E02328F046005677C1 /* LTPPwdTableViewController.m */,
-				FE32E1E22328F9B5005677C1 /* LTPInfoTableViewController.h */,
-				FE32E1E32328F9B5005677C1 /* LTPInfoTableViewController.m */,
-				FE32E1E52328FD6D005677C1 /* LTPClipAvaterViewController.h */,
-				FE32E1E62328FD6D005677C1 /* LTPClipAvaterViewController.m */,
-				FED782C8235DFCAB008CF47E /* ZZLoginTarget.h */,
-				FED782C9235DFCAB008CF47E /* ZZLoginTarget.m */,
-			);
-			path = RegisterAndLogin;
-			sourceTree = "<group>";
-		};
 		FE6726602358186500FC0D02 /* ZZPictureWordsTarget */ = {
 			isa = PBXGroup;
 			children = (
@@ -497,8 +443,6 @@
 		FE9821BC228CFC5800DBF6E5 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
-				97163E832255D586007E3380 /* LTPMainNavigationController.h */,
-				97163E842255D586007E3380 /* LTPMainNavigationController.m */,
 				97163E862255D59C007E3380 /* LTPMainTabBarController.h */,
 				97163E872255D59C007E3380 /* LTPMainTabBarController.m */,
 				FE6C8261228A90EF00AAEDA6 /* PPCustomPresentationController.h */,
@@ -569,7 +513,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE5AF7B0230A92290078293E /* Login.storyboard in Resources */,
 				97163EAC2255F73F007E3380 /* LTPReviewViewController.xib in Resources */,
 				FE3349A322B1FEA200C957D6 /* PPTips.plist in Resources */,
 				D91C5554225777F500FCA4F0 /* suoyoudaan.plist in Resources */,
@@ -646,20 +589,17 @@
 				FE3349AC22B22C0800C957D6 /* PPHistoryTableViewController.m in Sources */,
 				FE3349B322B22EF000C957D6 /* PPTransDetailModel.m in Sources */,
 				FE9821B4228C11A800DBF6E5 /* LTPMemoryCollectionViewCell.m in Sources */,
-				FED782CA235DFCAB008CF47E /* ZZLoginTarget.m in Sources */,
 				97163E982255DFF7007E3380 /* PPDataManager.m in Sources */,
 				FE19B619225DF06600892E64 /* ImproveCollectionViewCell.m in Sources */,
 				97163E882255D59C007E3380 /* LTPMainTabBarController.m in Sources */,
 				FE3349C222B23F4500C957D6 /* LTPListenViewController.m in Sources */,
 				FE9821BF228CFCF000DBF6E5 /* PPListViewController.m in Sources */,
 				FE6726632358189300FC0D02 /* ZZPictureWordsTarget.m in Sources */,
-				FE32E1E42328F9B5005677C1 /* LTPInfoTableViewController.m in Sources */,
 				FE19B616225DF03D00892E64 /* PPObviouslyEffectFlowLayout.m in Sources */,
 				FE3349B622B22F9E00C957D6 /* PPTransDetailView.m in Sources */,
 				FE7EC223225C9A2100D419B0 /* CCDraggableContainer.m in Sources */,
 				97524A51225324DF00A2F878 /* main.m in Sources */,
 				FEC36F56232625E600CE224D /* LTPHomeModel.m in Sources */,
-				97163E852255D586007E3380 /* LTPMainNavigationController.m in Sources */,
 				FE3349B022B22E9300C957D6 /* PPTransDetailViewController.m in Sources */,
 				FE33498B22B1FDC400C957D6 /* PPTipsTableViewCell.m in Sources */,
 				97163E8B2255D5CC007E3380 /* LTPHomeViewController.m in Sources */,
@@ -671,23 +611,17 @@
 				97163EAB2255F73F007E3380 /* LTPReviewViewController.m in Sources */,
 				FE32E1FC232951C8005677C1 /* LTPSuggestViewController.m in Sources */,
 				FE6C8263228A90EF00AAEDA6 /* PPCustomPresentationController.m in Sources */,
-				FE32E1E72328FD6D005677C1 /* LTPClipAvaterViewController.m in Sources */,
 				FE7EC226225C9D9E00D419B0 /* PPXueXiCardView.m in Sources */,
 				FE3349C822B2401E00C957D6 /* PPListenTableViewCell.m in Sources */,
 				97163EA62255F72B007E3380 /* PPXuexiViewController.m in Sources */,
-				FE32E1DE2328E931005677C1 /* LTPTimer.m in Sources */,
 				97163E942255D5F1007E3380 /* LTPProgressViewController.m in Sources */,
 				FE98146A228AAD9200DBF6E5 /* LTPLearnWordModel.m in Sources */,
-				FE32E1D22328D73D005677C1 /* LTPPwdLoginTableViewController.m in Sources */,
 				97163E8E2255D5DD007E3380 /* LTPTestViewController.m in Sources */,
 				FE9821B1228C10FB00DBF6E5 /* LTPLearnWordViewController.m in Sources */,
 				FE3349D322B2427A00C957D6 /* LTPPlayMusicHandle.m in Sources */,
 				FE3349C522B23F8000C957D6 /* LTPListenModel.m in Sources */,
-				FE32E1D52328D75D005677C1 /* LTPRegisterTableViewController.m in Sources */,
 				97163E912255D5E7007E3380 /* LTPCollectionViewController.m in Sources */,
-				FE32E1D82328E0A8005677C1 /* LTPCodeLoginTableViewController.m in Sources */,
 				FE7EC222225C9A2100D419B0 /* CCDraggableCardView.m in Sources */,
-				FE32E1E12328F046005677C1 /* LTPPwdTableViewController.m in Sources */,
 				97524A43225324DF00A2F878 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

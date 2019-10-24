@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "LTPMainTabBarController.h"
 #import <BmobSDK/Bmob.h>
+#import <ZZMediator+ZZLogin.h>
 
 @interface AppDelegate ()
 
@@ -28,12 +29,16 @@
     if ([[NSUserDefaults standardUserDefaults] objectForKey:kLTPWordsPhone]) {
         self.window.rootViewController = root;
     } else {
-        self.window.rootViewController = [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateInitialViewController];
+        self.window.rootViewController = [[ZZMediator defaultZZMediator] login_fetchLoginVC];
     }
     [self.window makeKeyAndVisible];
     
     // 15846985234
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    // 设置navigationbar
+    [UINavigationBar appearance].barTintColor = [[ZZMediator defaultZZMediator] cat_colorWithHexString:@"0x44BB88"];
+    [UINavigationBar appearance].tintColor = [UIColor whiteColor];
+    [UINavigationBar appearance].titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor]};
     return YES;
 }
 
