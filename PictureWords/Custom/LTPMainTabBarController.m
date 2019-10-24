@@ -7,7 +7,6 @@
 //
 
 #import "LTPMainTabBarController.h"
-#import "LTPMainNavigationController.h"
 #import "ZZMediator+PictureWords.h"
 #import "PPTranslateViewController.h"
 #import "LTPSetTableViewController.h"
@@ -68,12 +67,12 @@
             vc = vcClassArr[0];
         }
         else if (i == 2) {
-            vc = [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateViewControllerWithIdentifier:@"LTPSetTableViewController"];
+            //vc = [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateViewControllerWithIdentifier:@"LTPSetTableViewController"];
         }
         else {
             vc = [[vcClassArr[i] alloc] init];
         }
-        LTPMainNavigationController *root = [[LTPMainNavigationController alloc] initWithRootViewController:vc];
+        UINavigationController *root = [[UINavigationController alloc] initWithRootViewController:vc];
         root.tabBarItem = [[MainTabBarItem alloc] initWithTitle:nameArr[i] image:defaultImages[i] selectedImage:selectedImages[i] titleColor:defaultColor selectedTitleColor:selectedColor];
         [viewcontrollers addObject:root];
     }
