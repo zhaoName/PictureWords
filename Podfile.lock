@@ -14,41 +14,51 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - BmobSDK (2.3.4)
+  - BmobSDK (2.4.1)
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
-  - MJExtension (3.0.15.1)
+  - MJExtension (3.0.17)
   - MJRefresh (3.2.0)
   - mob_smssdk (3.2.3):
     - MOBFoundation
   - MOBFoundation (3.2.6)
-  - SDWebImage (5.1.0):
-    - SDWebImage/Core (= 5.1.0)
-  - SDWebImage/Core (5.1.0)
-  - ZZBaseTool (0.0.2):
-    - ZZBaseTool/ZZCategary (= 0.0.2)
-    - ZZBaseTool/ZZClipAvator (= 0.0.2)
-    - ZZBaseTool/ZZNetwotkHandle (= 0.0.2)
-  - ZZBaseTool/ZZCategary (0.0.2):
+  - SDWebImage (5.2.3):
+    - SDWebImage/Core (= 5.2.3)
+  - SDWebImage/Core (5.2.3)
+  - ZZBaseTool (0.0.3):
+    - ZZBaseTool/ZZCategary (= 0.0.3)
+    - ZZBaseTool/ZZClipAvator (= 0.0.3)
+    - ZZBaseTool/ZZCustomView (= 0.0.3)
+    - ZZBaseTool/ZZNetwotkHandle (= 0.0.3)
+  - ZZBaseTool/ZZCategary (0.0.3):
     - MBProgressHUD (~> 1.1.0)
-  - ZZBaseTool/ZZClipAvator (0.0.2)
-  - ZZBaseTool/ZZNetwotkHandle (0.0.2):
+  - ZZBaseTool/ZZClipAvator (0.0.3)
+  - ZZBaseTool/ZZCustomView (0.0.3)
+  - ZZBaseTool/ZZNetwotkHandle (0.0.3):
     - AFNetworking (~> 3.0)
   - ZZLoginAndRegister (0.0.1):
     - mob_smssdk (~> 3.2.3)
     - "ZZMediator/ZZMediator+ZZBaseTool"
-  - ZZMediator (0.0.4):
-    - ZZMediator/Mediator (= 0.0.4)
-    - "ZZMediator/ZZMediator+PictureWords (= 0.0.4)"
-    - "ZZMediator/ZZMediator+ZZBaseTool (= 0.0.4)"
-    - "ZZMediator/ZZMediator+ZZLogin (= 0.0.4)"
-  - ZZMediator/Mediator (0.0.4)
-  - "ZZMediator/ZZMediator+PictureWords (0.0.4)":
+  - ZZMediator (0.0.6):
+    - ZZMediator/Mediator (= 0.0.6)
+    - "ZZMediator/ZZMediator+PictureWords (= 0.0.6)"
+    - "ZZMediator/ZZMediator+ZZBaseTool (= 0.0.6)"
+    - "ZZMediator/ZZMediator+ZZLogin (= 0.0.6)"
+    - "ZZMediator/ZZMediator+ZZSettings (= 0.0.6)"
+  - ZZMediator/Mediator (0.0.6)
+  - "ZZMediator/ZZMediator+PictureWords (0.0.6)":
     - ZZMediator/Mediator
-  - "ZZMediator/ZZMediator+ZZBaseTool (0.0.4)":
+  - "ZZMediator/ZZMediator+ZZBaseTool (0.0.6)":
     - ZZMediator/Mediator
-  - "ZZMediator/ZZMediator+ZZLogin (0.0.4)":
+  - "ZZMediator/ZZMediator+ZZLogin (0.0.6)":
     - ZZMediator/Mediator
+  - "ZZMediator/ZZMediator+ZZSettings (0.0.6)":
+    - ZZMediator/Mediator
+  - ZZSettings (0.0.1):
+    - SDWebImage (~> 5.2.3)
+    - "ZZMediator/ZZMediator+ZZBaseTool"
+    - "ZZMediator/ZZMediator+ZZLogin"
+    - "ZZMediator/ZZMediator+ZZSettings"
 
 DEPENDENCIES:
   - BmobSDK
@@ -59,6 +69,7 @@ DEPENDENCIES:
   - ZZBaseTool (~> 0.0.2)
   - ZZLoginAndRegister (~> 0.0.1)
   - ZZMediator (~> 0.0.4)
+  - ZZSettings (~> 0.0.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -75,21 +86,23 @@ SPEC REPOS:
     - ZZBaseTool
     - ZZLoginAndRegister
     - ZZMediator
+    - ZZSettings
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  BmobSDK: 03e9889d92b721bfc2452faa5b2c2497581abbca
+  BmobSDK: 930525437e6602f7146108e11a9796604a1edbb9
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
-  MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
+  MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
   mob_smssdk: cdb6a31d4fd4667ed928e2eca03f21ad89ebc05c
   MOBFoundation: 08c456357888e4c984fba23bbf04cfd2f4fc1e02
-  SDWebImage: fb387001955223213dde14bc08c8b73f371f8d8f
-  ZZBaseTool: 671809b3c2dbec4f97b63e8233be5711a13e0809
+  SDWebImage: 46a7f73228f84ce80990c786e4372cf4db5875ce
+  ZZBaseTool: c7f6f31fe437e781165bb84fd08cdc5bb4f2447a
   ZZLoginAndRegister: c28e7c35abf6c8de7e48e4fa01461e52451cad71
-  ZZMediator: a2bc43369d24ac20da59be2ab7cd9c920ab77ded
+  ZZMediator: 0d22a5ea7b451c7c126b5391d33b0e29e418441e
+  ZZSettings: fef2dd18a951be0d2b3c29a41e1844876237eb69
 
-PODFILE CHECKSUM: 10ed953d1fa0c0647fce564a4ab60e7ebd13518c
+PODFILE CHECKSUM: cda2b6d68a9aab1d91dae6c303073575f6b26cb1
 
 COCOAPODS: 1.7.5

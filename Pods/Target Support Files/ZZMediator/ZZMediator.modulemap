@@ -1,0 +1,6 @@
+framework module ZZMediator {
+  umbrella header "ZZMediator-umbrella.h"
+
+  export *
+  module * { export * }
+}

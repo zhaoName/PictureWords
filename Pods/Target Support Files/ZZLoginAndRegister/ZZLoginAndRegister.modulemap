@@ -1,0 +1,6 @@
+framework module ZZLoginAndRegister {
+  umbrella header "ZZLoginAndRegister-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,9 +7,9 @@
 //
 
 #import "LTPMainTabBarController.h"
-#import "ZZMediator+PictureWords.h"
+#import <ZZMediator+PictureWords.h>
+#import <ZZMediator+ZZSettings.h>
 #import "PPTranslateViewController.h"
-#import "LTPSetTableViewController.h"
 
 @interface MainTabBarItem : UITabBarItem
 - (instancetype)initWithTitle:(NSString *)title image:(UIImage *)image selectedImage:(UIImage *)selectedImage titleColor:(UIColor *)titleColor selectedTitleColor:(UIColor *)selectedTitleColor ;
@@ -42,7 +42,7 @@
     NSArray *vcClassArr = @[
                                    [[ZZMediator defaultZZMediator] zz_fectchHomeVC],
                                    [PPTranslateViewController class],
-                                   [LTPSetTableViewController class],
+                                   [[ZZMediator defaultZZMediator] settings_fetchSettingsVC],
                                    //[LTPProgressViewController class]
                                    ];
     UIColor *defaultColor = [[ZZMediator defaultZZMediator] cat_colorWithHexString:@"0xbfbfbf"];
@@ -63,11 +63,8 @@
     NSMutableArray *viewcontrollers = [NSMutableArray array];
     for (int i = 0; i < vcClassArr.count; i++) {
         UIViewController *vc = nil;
-        if (i == 0) {
-            vc = vcClassArr[0];
-        }
-        else if (i == 2) {
-            //vc = [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateViewControllerWithIdentifier:@"LTPSetTableViewController"];
+        if (i == 0 || i == 2) {
+            vc = vcClassArr[i];
         }
         else {
             vc = [[vcClassArr[i] alloc] init];

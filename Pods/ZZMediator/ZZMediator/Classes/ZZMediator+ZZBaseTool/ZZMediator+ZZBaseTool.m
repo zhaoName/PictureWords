@@ -104,4 +104,16 @@
     [self zz_preformTagert:@"ZZBaseToolTarget" action:@"bt_postRequestWithParams:" params:paramDict shouldCache:NO];
 }
 
+#pragma mark -- ZZCustomView
+
+- (UITextView *)cat_fetchCustomTextView:(CGRect)frame font:(CGFloat)font placeHolder:(NSString *)placeHolder
+{
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    [params setValue:NSStringFromCGRect(frame) forKey:@"frame"];
+    [params setValue:@(font) forKey:@"font"];
+    [params setValue:placeHolder forKey:@"placeHolder"];
+    return [self zz_preformTagert:@"ZZBaseToolTarget" action:@"bt_getCustomTextView:" params:params shouldCache:NO];
+}
+
+
 @end
