@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E744DABE95F71FD5D06D92E2882408CB"
-               BuildableName = "libZZLoginAndRegister.a"
+               BuildableName = "ZZLoginAndRegister.framework"
                BlueprintName = "ZZLoginAndRegister"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

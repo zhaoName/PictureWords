@@ -13,7 +13,6 @@
 #import "PPTransDetailTableViewCell.h"
 #import <MJExtension.h>
 #import <Masonry.h>
-#import "LTPTextView.h"
 
 @interface PPTransDetailViewController ()<UITableViewDelegate, UITableViewDataSource, UITextViewDelegate>
 
@@ -24,7 +23,7 @@
 @property (nonatomic, strong) UILabel *cLabel;/**< */
 @property (nonatomic, strong) UILabel *eLabel;/**< */
 
-@property (nonatomic, strong) LTPTextView *tv;/**< */
+@property (nonatomic, strong) UITextView *tv;/**< */
 @property (nonatomic, strong) UIButton *closeBtn;/**< */
 
 @property (nonatomic, strong) PPTransDetailModel *model;/**< */
@@ -92,14 +91,6 @@
     } failure:^(NSError * _Nonnull error) {
         NSLog(@"error:%@", error.localizedDescription);
     }];
-//    [PPNetworkHandle ltp_POST:@"http://openapi.youdao.com/api" parameters:param success:^(NSURLSessionDataTask *task, id responeData) {
-//
-//        self.model = [PPTransDetailModel mj_objectWithKeyValues:responeData];
-//        [self updateUI];
-//        [self ltp_saveTransContent];
-//    } failure:^(NSURLSessionDataTask *task, NSError *error) {
-//        NSLog(@"error:%@", error.localizedDescription);
-//    }];
 }
 
 - (NSString *)ltp_MD5Encrypt:(NSString *)str
@@ -233,12 +224,10 @@
 
 #pragma mark -- getter or setter
 
-- (LTPTextView *)tv
+- (UITextView *)tv
 {
     if (!_tv) {
-        _tv = [[LTPTextView alloc] initWithFrame:CGRectMake(15, iSIPhoneX?88:75, SCREEN_WIDTH - 30, 120)];
-        _tv.ltp_placeHolder = @"请输入要翻译的文字";
-        _tv.ltp_systemFont = 21;
+        _tv = [[ZZMediator defaultZZMediator] cat_fetchCustomTextView:CGRectMake(15, iSIPhoneX?88:75, SCREEN_WIDTH - 30, 120) font:21 placeHolder:@"请输入要翻译的文字"];
         _tv.delegate = self;
         [_tv becomeFirstResponder];
         [_tv addSubview:self.closeBtn];

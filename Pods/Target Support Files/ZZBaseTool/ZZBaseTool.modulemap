@@ -1,0 +1,6 @@
+framework module ZZBaseTool {
+  umbrella header "ZZBaseTool-umbrella.h"
+
+  export *
+  module * { export * }
+}

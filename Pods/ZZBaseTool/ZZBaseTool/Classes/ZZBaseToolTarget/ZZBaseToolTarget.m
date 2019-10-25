@@ -13,6 +13,7 @@
 #import "UIImage+LTPOrien.h"
 #import "LTPHUDManager.h"
 #import "ClipImageView.h"
+#import "LTPTextView.h"
 
 @implementation ZZBaseToolTarget
 
@@ -116,6 +117,17 @@ typedef void(^NetworkFailureBlock)(NSError *error);
             failure(error);
         }
     }];
+}
+
+
+#pragma mark -- ZZCustomView
+
+- (LTPTextView *)bt_getCustomTextView:(NSDictionary *)params
+{
+    LTPTextView *cv = [[LTPTextView alloc] initWithFrame:CGRectFromString(params[@"frame"])];
+    cv.ltp_systemFont = [params[@"font"] floatValue];
+    cv.ltp_placeHolder = params[@"placeHolder"];
+    return cv;
 }
 
 @end

@@ -1,0 +1,6 @@
+framework module ZZSettings {
+  umbrella header "ZZSettings-umbrella.h"
+
+  export *
+  module * { export * }
+}

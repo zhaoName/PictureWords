@@ -40,6 +40,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)cat_getRequestWithUrl:(NSString *)urlString params:(NSDictionary *)params success:(void(^)(id responeData))success failure:(void(^)(NSError *error))failure;
 - (void)cat_postRequestWithUrl:(NSString *)urlString params:(NSDictionary *)params success:(void(^)(id responeData))success failure:(void(^)(NSError *error))failure;
 
+#pragma mark -- ZZCustomView
+
+- (UITextView *)cat_fetchCustomTextView:(CGRect)frame font:(CGFloat)font placeHolder:(NSString *)placeHolder;
+
 @end
 
 NS_ASSUME_NONNULL_END

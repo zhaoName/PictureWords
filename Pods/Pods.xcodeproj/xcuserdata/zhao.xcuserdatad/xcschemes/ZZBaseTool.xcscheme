@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "864BB3F2ACB45779B3FAA11D49FC0E7A"
-               BuildableName = "libZZBaseTool.a"
+               BuildableName = "ZZBaseTool.framework"
                BlueprintName = "ZZBaseTool"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
