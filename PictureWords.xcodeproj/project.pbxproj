@@ -48,7 +48,6 @@
 		FE3349D022B2419F00C957D6 /* CALayer+PPAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3349CF22B2419F00C957D6 /* CALayer+PPAnimation.m */; };
 		FE3349D322B2427A00C957D6 /* LTPPlayMusicHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3349D222B2427A00C957D6 /* LTPPlayMusicHandle.m */; };
 		FE3349D622B2433700C957D6 /* LTPMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3349D522B2433700C957D6 /* LTPMusicViewController.m */; };
-		FE3349D922B2434F00C957D6 /* LTPMusicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3349D822B2434F00C957D6 /* LTPMusicModel.m */; };
 		FE6726632358189300FC0D02 /* ZZPictureWordsTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6726622358189300FC0D02 /* ZZPictureWordsTarget.m */; };
 		FE6C8263228A90EF00AAEDA6 /* PPCustomPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6C8262228A90EF00AAEDA6 /* PPCustomPresentationController.m */; };
 		FE6C8266228A915700AAEDA6 /* LTPDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6C8265228A915700AAEDA6 /* LTPDisplayViewController.m */; };
@@ -63,6 +62,7 @@
 		FEC36F522325E87700CE224D /* LTPHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC36F502325E87700CE224D /* LTPHomeTableViewCell.m */; };
 		FEC36F532325E87700CE224D /* LTPHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEC36F512325E87700CE224D /* LTPHomeTableViewCell.xib */; };
 		FEC36F56232625E600CE224D /* LTPHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC36F55232625E600CE224D /* LTPHomeModel.m */; };
+		FED783602366BF08008CF47E /* ZZTranslateTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = FED7835F2366BF08008CF47E /* ZZTranslateTarget.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,8 +140,6 @@
 		FE3349D222B2427A00C957D6 /* LTPPlayMusicHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTPPlayMusicHandle.m; sourceTree = "<group>"; };
 		FE3349D422B2433700C957D6 /* LTPMusicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTPMusicViewController.h; sourceTree = "<group>"; };
 		FE3349D522B2433700C957D6 /* LTPMusicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTPMusicViewController.m; sourceTree = "<group>"; };
-		FE3349D722B2434F00C957D6 /* LTPMusicModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTPMusicModel.h; sourceTree = "<group>"; };
-		FE3349D822B2434F00C957D6 /* LTPMusicModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTPMusicModel.m; sourceTree = "<group>"; };
 		FE6726612358189300FC0D02 /* ZZPictureWordsTarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZPictureWordsTarget.h; sourceTree = "<group>"; };
 		FE6726622358189300FC0D02 /* ZZPictureWordsTarget.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZPictureWordsTarget.m; sourceTree = "<group>"; };
 		FE6C8261228A90EF00AAEDA6 /* PPCustomPresentationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCustomPresentationController.h; sourceTree = "<group>"; };
@@ -169,6 +167,8 @@
 		FEC36F512325E87700CE224D /* LTPHomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LTPHomeTableViewCell.xib; sourceTree = "<group>"; };
 		FEC36F54232625E600CE224D /* LTPHomeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTPHomeModel.h; sourceTree = "<group>"; };
 		FEC36F55232625E600CE224D /* LTPHomeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTPHomeModel.m; sourceTree = "<group>"; };
+		FED7835E2366BF08008CF47E /* ZZTranslateTarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZTranslateTarget.h; sourceTree = "<group>"; };
+		FED7835F2366BF08008CF47E /* ZZTranslateTarget.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZTranslateTarget.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +257,7 @@
 		FE33497E22B1F92300C957D6 /* PPTranslate */ = {
 			isa = PBXGroup;
 			children = (
+				FED7835D2366BEEC008CF47E /* ZZTranslateTarget */,
 				FE3349BF22B23F1A00C957D6 /* PPListenViewController */,
 				FE3349AD22B22E3D00C957D6 /* PPTransDetailViewController */,
 				FE3349A922B22AD000C957D6 /* PPHistoryTabelViewController */,
@@ -321,8 +322,6 @@
 				FE3349D222B2427A00C957D6 /* LTPPlayMusicHandle.m */,
 				FE3349D422B2433700C957D6 /* LTPMusicViewController.h */,
 				FE3349D522B2433700C957D6 /* LTPMusicViewController.m */,
-				FE3349D722B2434F00C957D6 /* LTPMusicModel.h */,
-				FE3349D822B2434F00C957D6 /* LTPMusicModel.m */,
 			);
 			path = PPListenViewController;
 			sourceTree = "<group>";
@@ -426,6 +425,15 @@
 				FE6C8262228A90EF00AAEDA6 /* PPCustomPresentationController.m */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		FED7835D2366BEEC008CF47E /* ZZTranslateTarget */ = {
+			isa = PBXGroup;
+			children = (
+				FED7835E2366BF08008CF47E /* ZZTranslateTarget.h */,
+				FED7835F2366BF08008CF47E /* ZZTranslateTarget.m */,
+			);
+			path = ZZTranslateTarget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -600,13 +608,13 @@
 				FE3349CD22B240DA00C957D6 /* PLTPPlayListenView.m in Sources */,
 				97163EB022560F27007E3380 /* LTPCollectionViewCell.m in Sources */,
 				FE3349D022B2419F00C957D6 /* CALayer+PPAnimation.m in Sources */,
-				FE3349D922B2434F00C957D6 /* LTPMusicModel.m in Sources */,
 				97163EAB2255F73F007E3380 /* LTPReviewViewController.m in Sources */,
 				FE6C8263228A90EF00AAEDA6 /* PPCustomPresentationController.m in Sources */,
 				FE7EC226225C9D9E00D419B0 /* PPXueXiCardView.m in Sources */,
 				FE3349C822B2401E00C957D6 /* PPListenTableViewCell.m in Sources */,
 				97163EA62255F72B007E3380 /* PPXuexiViewController.m in Sources */,
 				97163E942255D5F1007E3380 /* LTPProgressViewController.m in Sources */,
+				FED783602366BF08008CF47E /* ZZTranslateTarget.m in Sources */,
 				FE98146A228AAD9200DBF6E5 /* LTPLearnWordModel.m in Sources */,
 				97163E8E2255D5DD007E3380 /* LTPTestViewController.m in Sources */,
 				FE9821B1228C10FB00DBF6E5 /* LTPLearnWordViewController.m in Sources */,
