@@ -64,13 +64,6 @@
     } failure:^(NSError * _Nonnull error) {
         [self.tableView.mj_header endRefreshing];
     }];
-//    [PPNetworkHandle ltp_GET:url parameters:@{} success:^(NSURLSessionDataTask *task, id responeData) {
-//        
-//
-//    } failure:^(NSURLSessionDataTask *task, NSError *error) {
-//
-//
-//    }];
 }
 
 #pragma mark - UITableViewDataSource
