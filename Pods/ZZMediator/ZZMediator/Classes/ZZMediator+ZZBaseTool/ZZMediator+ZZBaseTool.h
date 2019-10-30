@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)cat_checkPwd:(NSString *)pwd;
 
 - (UIImage *)cat_getImageFixOrientation:(UIImage *)image;
-- (UIImage *)cat_imageWithName:(NSString *)imageName;
+- (UIImage *)cat_imageWithName:(NSString *)imageName atClass:(Class)cls;
 
 
 - (void)cat_showIndicatorHUDWithMessage:(NSString *)message view:(nullable UIView *)curView;

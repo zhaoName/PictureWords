@@ -43,7 +43,7 @@
     self.tableview.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     UIImageView *imageV = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"home_bg"]];
-    imageV.frame = CGRectMake(0, 0, SCREEN_WIDTH, 207);
+    imageV.frame = CGRectMake(0, 0, [UIView ltp_screenWidth], 207);
     self.tableview.tableHeaderView = imageV;
     
     [self addBarButtonItem];
@@ -98,7 +98,7 @@
     } else {
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
-    self.tableview.frame = CGRectMake(0, NavgationHeight, ScreenWidth, ScreenHeight - NavgationHeight - TabbarHeight);
+    self.tableview.frame = CGRectMake(0, [UIView ltp_navigationBarHright], [UIView ltp_screenWidth], [UIView ltp_screenHeight] - [UIView ltp_navigationBarHright] - [UIView ltp_tabbarHeight]);
 }
 
 #pragma mark -- 刷新控件
@@ -193,7 +193,7 @@
 - (UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented presentingViewController:(UIViewController *)presenting sourceViewController:(UIViewController *)source
 {
     PPCustomPresentationController *cto = [[PPCustomPresentationController alloc] initWithPresentedViewController:presented presentingViewController:presenting];
-    cto.cusFrame = iSIPhoneX ? CGRectMake(SCREEN_WIDTH - 130, 75, 120, 120) : CGRectMake(SCREEN_WIDTH - 130, 55, 120, 120);
+    cto.cusFrame = [UIView ltp_isIPhoneX] ? CGRectMake([UIView ltp_screenWidth] - 130, 75, 120, 120) : CGRectMake([UIView ltp_screenWidth] - 130, 55, 120, 120);
     return cto;
 }
 

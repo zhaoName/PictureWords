@@ -10,6 +10,7 @@
 #import "LTPMainTabBarController.h"
 #import <BmobSDK/Bmob.h>
 #import <ZZMediator+ZZLogin.h>
+#import <ZZMediator+ZZTranslate.h>
 
 @interface AppDelegate ()
 
@@ -21,7 +22,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [Bmob registerWithAppKey:@"bcfd40bb04764639c885eec5251936b6"];
-    [self ltp_saveTipsToDocumentPath];
+    [[ZZMediator defaultZZMediator] trans_getTipsFromPlistFile];
     //
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
@@ -40,19 +41,6 @@
     [UINavigationBar appearance].tintColor = [UIColor whiteColor];
     [UINavigationBar appearance].titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor]};
     return YES;
-}
-
-
-#pragma mark -- private method
-
-- (void)ltp_saveTipsToDocumentPath
-{
-    NSString *path = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) lastObject];
-    path = [path stringByAppendingPathComponent:@"PPHistory.plist"];
-    if ([[NSFileManager defaultManager] fileExistsAtPath:path]) return;
-    
-    NSMutableArray *arr = [[NSMutableArray alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"PPTips" ofType:@".plist"]];
-    [arr writeToFile:path atomically:YES];
 }
 
 @end

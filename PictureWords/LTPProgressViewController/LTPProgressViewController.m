@@ -86,7 +86,7 @@
     } else {
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
-    self.collectionView.frame = CGRectMake(0, NavgationHeight, ScreenWidth, ScreenHeight - NavgationHeight - TabbarHeight);
+    self.collectionView.frame = CGRectMake(0, [UIView ltp_navigationBarHright], [UIView ltp_screenWidth], [UIView ltp_screenHeight] - [UIView ltp_navigationBarHright] - [UIView ltp_tabbarHeight]);
 }
 
 #pragma mark -- private method

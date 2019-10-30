@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-#define Item_Width  (ScreenWidth - 60) * 0.70
-#define Item_Height (ScreenWidth - 60) * 420 / 300 *0.70
+#define Item_Width  ([UIView ltp_screenWidth] - 60) * 0.70
+#define Item_Height ([UIView ltp_screenWidth] - 60) * 420 / 300 *0.70
 
 @interface PPObviouslyEffectFlowLayout : UICollectionViewFlowLayout
 

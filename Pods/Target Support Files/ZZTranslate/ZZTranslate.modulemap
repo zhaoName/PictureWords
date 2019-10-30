@@ -1,0 +1,6 @@
+framework module ZZTranslate {
+  umbrella header "ZZTranslate-umbrella.h"
+
+  export *
+  module * { export * }
+}
