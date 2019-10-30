@@ -35,9 +35,9 @@
     return [self zz_preformTagert:@"ZZBaseToolTarget" action:@"bt_fixImageOrientation:" params:@{@"image":image} shouldCache:NO];
 }
 
-- (UIImage *)cat_imageWithName:(NSString *)imageName
+- (UIImage *)cat_imageWithName:(NSString *)imageName atClass:(nonnull Class)cls
 {
-    return [self zz_preformTagert:@"ZZBaseToolTarget" action:@"bt_getImageWithName:" params:@{@"imageName":imageName} shouldCache:NO];
+    return [self zz_preformTagert:@"ZZBaseToolTarget" action:@"bt_getImageWithName:" params:@{@"imageName":imageName, @"class":cls} shouldCache:NO];
 }
 
 

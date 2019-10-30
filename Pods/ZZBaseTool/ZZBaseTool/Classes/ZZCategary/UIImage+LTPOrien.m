@@ -84,11 +84,11 @@
 }
 
 
-+ (UIImage *)ltp_imageWithName:(NSString *)imageName
++ (UIImage *)ltp_imageWithName:(NSString *)imageName atClass:(Class)cls
 {
     // 图片全名，@2x @3x 也要带上
     imageName = [NSString stringWithFormat:@"%@@%dx.png", imageName, (int)[UIScreen mainScreen].scale];
-    NSBundle *bundle = [NSBundle bundleForClass:self.class];
+    NSBundle *bundle = [NSBundle bundleForClass:cls];
     NSString *zzBaseBunleName = bundle.infoDictionary[@"CFBundleName"];
     NSString *baseDirectory = [NSString stringWithFormat:@"%@.bundle", zzBaseBunleName];
     

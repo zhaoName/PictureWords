@@ -34,7 +34,7 @@
     self.navigationItem.title = [NSString stringWithFormat:@"1/%zd", self.datasource.count];
     self.view.backgroundColor = [[ZZMediator defaultZZMediator] cat_colorWithHexString:@"0xefefef"];
     
-    self.container = [[CCDraggableContainer alloc] initWithFrame:CGRectMake(20, 125, ScreenWidth-40, 436) style:CCDraggableStyleUpOverlay];
+    self.container = [[CCDraggableContainer alloc] initWithFrame:CGRectMake(20, 125, [UIView ltp_screenWidth]-40, 436) style:CCDraggableStyleUpOverlay];
     self.container.delegate = self;
     self.container.dataSource = self;
     [self.view addSubview:self.container];

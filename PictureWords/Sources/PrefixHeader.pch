@@ -11,33 +11,7 @@
 
 #import <ZZMediator+ZZBaseTool.h>
 #import "PPDataManager.h"
-
-#define ScreenWidth [[UIScreen mainScreen] bounds].size.width
-#define ScreenHeight [[UIScreen mainScreen] bounds].size.height
-#define SCREEN_MAX_LENGTH_BASE   (MAX(ScreenWidth, ScreenHeight))
-#define IS_PAD           (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-#define IS_PHONE           (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
-// x  xs 一样
-#define IS_IPHONE_XS_BASE        (IS_PHONE && SCREEN_MAX_LENGTH_BASE == 812.0)
-// xr  xsmax
-#define IS_IPHONE_XS_MAX_BASE    (IS_PHONE && SCREEN_MAX_LENGTH_BASE == 896.0)
-//X
-#define IS_IPHONE_X_All_BASE     (IS_IPHONE_XS_BASE || IS_IPHONE_XS_MAX_BASE)
-
-#define TOP     (IS_IPHONE_X_All_BASE ? (ScreenWidth > ScreenHeight ? 0:44) : 20)
-#define BOTTOM  (IS_IPHONE_X_All_BASE ? (ScreenWidth > ScreenHeight ? 21:34) : 0)
-#define LEFT_OR_RIGHT    (IS_IPHONE_X_All_BASE ? (ScreenWidth > ScreenHeight ? 44:0) : 0)
-#define NavgationHeight  (44 + TOP)
-#define TabbarHeight     (49 + BOTTOM)
-
-#define Fit_WIDTH ScreenWidth / 375.0
-#define Fit_HEIGHT ScreenHeight / 667.0
-
-// 屏幕尺寸
-#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
-#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
-#define iSIPhoneX ((SCREEN_WIDTH == 375.f && SCREEN_HEIGHT == 812.f) || (SCREEN_WIDTH == 414.f && SCREEN_HEIGHT == 896.f))
-
+#import "UIView+ZZFrame.h"
 
 
 #define kLTPWordsPwd @"LTPWordsPwd"

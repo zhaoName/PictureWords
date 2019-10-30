@@ -60,8 +60,8 @@
     [self.echImageV mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self);
         make.centerY.equalTo(self).offset(-15);
-        make.width.mas_equalTo(self.frame.size.width * 0.5 *  ScreenWidth / 375.0);
-        make.height.mas_equalTo(self.frame.size.width * 0.5 *  ScreenWidth / 375.0);
+        make.width.mas_equalTo(self.frame.size.width * 0.5 *  [UIView ltp_screenWidth] / 375.0);
+        make.height.mas_equalTo(self.frame.size.width * 0.5 *  [UIView ltp_screenWidth] / 375.0);
     }];
     
     [self addSubview:self.chSenLabel];

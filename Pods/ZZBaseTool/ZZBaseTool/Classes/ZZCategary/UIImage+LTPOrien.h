@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (UIImage *)ltp_fixOrientation;
 
-+ (UIImage *)ltp_imageWithName:(NSString *)imageName;
++ (UIImage *)ltp_imageWithName:(NSString *)imageName atClass:(Class)cls;
 
 @end
 

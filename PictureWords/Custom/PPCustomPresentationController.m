@@ -18,7 +18,7 @@
 {
     [super containerViewWillLayoutSubviews];
     // 改变被推入试图view的大小
-    self.presentedView.frame = self.cusFrame; //iSIPhoneX ? CGRectMake(SCREEN_WIDTH - 130, 75, 120, 120) : CGRectMake(SCREEN_WIDTH - 130, 55, 120, 120);
+    self.presentedView.frame = self.cusFrame; //[UIView ltp_isIPhoneX] ? CGRectMake([UIView ltp_screenWidth] - 130, 75, 120, 120) : CGRectMake([UIView ltp_screenWidth] - 130, 55, 120, 120);
     // 背景view
     self.bgView = [[UIView alloc] initWithFrame:self.containerView.bounds];
     self.bgView.backgroundColor = [UIColor colorWithWhite:0.8 alpha:0.3];

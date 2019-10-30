@@ -9,7 +9,7 @@
 #import "LTPMainTabBarController.h"
 #import <ZZMediator+PictureWords.h>
 #import <ZZMediator+ZZSettings.h>
-#import "PPTranslateViewController.h"
+#import <ZZMediator+ZZTranslate.h>
 
 @interface MainTabBarItem : UITabBarItem
 - (instancetype)initWithTitle:(NSString *)title image:(UIImage *)image selectedImage:(UIImage *)selectedImage titleColor:(UIColor *)titleColor selectedTitleColor:(UIColor *)selectedTitleColor ;
@@ -41,7 +41,7 @@
     self.tabBar.barTintColor = [UIColor whiteColor];
     NSArray *vcClassArr = @[
                                    [[ZZMediator defaultZZMediator] zz_fectchHomeVC],
-                                   [PPTranslateViewController class],
+                                   [[ZZMediator defaultZZMediator] trans_fetchTranslateVC],
                                    [[ZZMediator defaultZZMediator] settings_fetchSettingsVC],
                                    //[LTPProgressViewController class]
                                    ];
@@ -62,14 +62,7 @@
                                            ];
     NSMutableArray *viewcontrollers = [NSMutableArray array];
     for (int i = 0; i < vcClassArr.count; i++) {
-        UIViewController *vc = nil;
-        if (i == 0 || i == 2) {
-            vc = vcClassArr[i];
-        }
-        else {
-            vc = [[vcClassArr[i] alloc] init];
-        }
-        UINavigationController *root = [[UINavigationController alloc] initWithRootViewController:vc];
+        UINavigationController *root = [[UINavigationController alloc] initWithRootViewController:vcClassArr[i]];
         root.tabBarItem = [[MainTabBarItem alloc] initWithTitle:nameArr[i] image:defaultImages[i] selectedImage:selectedImages[i] titleColor:defaultColor selectedTitleColor:selectedColor];
         [viewcontrollers addObject:root];
     }

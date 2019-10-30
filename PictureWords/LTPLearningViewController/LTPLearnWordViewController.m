@@ -57,7 +57,7 @@
     } else {
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
-    self.collectionView.frame = CGRectMake(0, NavgationHeight, ScreenWidth, ScreenHeight - NavgationHeight - TabbarHeight);
+    self.collectionView.frame = CGRectMake(0, [UIView ltp_navigationBarHright], [UIView ltp_screenWidth], [UIView ltp_screenHeight] - [UIView ltp_navigationBarHright] - [UIView ltp_tabbarHeight]);
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -143,7 +143,7 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    self.currentIndex = (scrollView.contentOffset.x) / ((ScreenWidth - 60) *0.85);
+    self.currentIndex = (scrollView.contentOffset.x) / (([UIView ltp_screenWidth] - 60) *0.85);
 //    if (!self.collectionView.decelerating) {
 //        [self rightItemState];
 //    }
@@ -160,7 +160,7 @@
 
 //- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 //{
-//    return CGSizeMake(ScreenWidth-100, 500);
+//    return CGSizeMake([UIView ltp_screenWidth]-100, 500);
 //}
 
 #pragma mark -- getter

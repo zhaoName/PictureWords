@@ -8,3 +8,4 @@ ${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
 ${BUILT_PRODUCTS_DIR}/ZZBaseTool/ZZBaseTool.framework
 ${BUILT_PRODUCTS_DIR}/ZZMediator/ZZMediator.framework
 ${BUILT_PRODUCTS_DIR}/ZZSettings/ZZSettings.framework
+${BUILT_PRODUCTS_DIR}/ZZTranslate/ZZTranslate.framework

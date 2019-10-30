@@ -109,6 +109,20 @@
 			<key>orderHint</key>
 			<integer>14</integer>
 		</dict>
+		<key>ZZTranslate-ZZTranslate.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>17</integer>
+		</dict>
+		<key>ZZTranslate.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>16</integer>
+		</dict>
 		<key>mob_smssdk.xcscheme</key>
 		<dict>
 			<key>isShown</key>

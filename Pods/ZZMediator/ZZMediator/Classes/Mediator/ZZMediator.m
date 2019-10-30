@@ -97,7 +97,9 @@
     const char *returnType = signature.methodReturnType;
     if (strcmp(@encode(void), returnType) == 0) {
         NSInvocation *invo = [NSInvocation invocationWithMethodSignature:signature];
-        [invo setArgument:&params atIndex:2];
+        if (signature.numberOfArguments > 2) {
+            [invo setArgument:&params atIndex:2];
+        }
         [invo setTarget:target];
         [invo setSelector:action];
         [invo invoke];
@@ -105,7 +107,9 @@
     }
     if (strcmp(@encode(BOOL), returnType) == 0) {
         NSInvocation *invo = [NSInvocation invocationWithMethodSignature:signature];
-        [invo setArgument:&params atIndex:2];
+        if (signature.numberOfArguments > 2) {
+            [invo setArgument:&params atIndex:2];
+        }
         [invo setTarget:target];
         [invo setSelector:action];
         [invo invoke];
@@ -115,7 +119,9 @@
     }
     if (strcmp(@encode(int), returnType) == 0) {
         NSInvocation *invo = [NSInvocation invocationWithMethodSignature:signature];
-        [invo setArgument:&params atIndex:2];
+        if (signature.numberOfArguments > 2) {
+            [invo setArgument:&params atIndex:2];
+        }
         [invo setTarget:target];
         [invo setSelector:action];
         [invo invoke];
@@ -125,7 +131,9 @@
     }
     if (strcmp(@encode(NSInteger), returnType) == 0) {
         NSInvocation *invo = [NSInvocation invocationWithMethodSignature:signature];
-        [invo setArgument:&params atIndex:2];
+        if (signature.numberOfArguments > 2) {
+            [invo setArgument:&params atIndex:2];
+        }
         [invo setTarget:target];
         [invo setSelector:action];
         [invo invoke];
@@ -135,7 +143,9 @@
     }
     if (strcmp(@encode(NSUInteger), returnType) == 0) {
         NSInvocation *invo = [NSInvocation invocationWithMethodSignature:signature];
-        [invo setArgument:&params atIndex:2];
+        if (signature.numberOfArguments > 2) {
+            [invo setArgument:&params atIndex:2];
+        }
         [invo setTarget:target];
         [invo setSelector:action];
         [invo invoke];
@@ -145,7 +155,9 @@
     }
     if (strcmp(@encode(CGFloat), returnType) == 0) {
         NSInvocation *invo = [NSInvocation invocationWithMethodSignature:signature];
-        [invo setArgument:&params atIndex:2];
+        if (signature.numberOfArguments > 2) {
+            [invo setArgument:&params atIndex:2];
+        }
         [invo setTarget:target];
         [invo setSelector:action];
         [invo invoke];
@@ -156,7 +168,11 @@
     
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-    return [target performSelector:action withObject:params];
+    if (signature.numberOfArguments <= 2) {
+        return [target performSelector:action];
+    } else {
+        return [target performSelector:action withObject:params];
+    }
 #pragma clang diagnostic pop
 }
 

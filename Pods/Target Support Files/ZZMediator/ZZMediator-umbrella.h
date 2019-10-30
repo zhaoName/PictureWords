@@ -15,6 +15,9 @@
 #import "ZZMediator+ZZBaseTool.h"
 #import "ZZMediator+ZZLogin.h"
 #import "ZZMediator+ZZSettings.h"
+#import "ZZMediator+ZZTranslate.h"
+#import "UIView+ZZFrame.h"
+#import "ZZConstString.h"
 
 FOUNDATION_EXPORT double ZZMediatorVersionNumber;
 FOUNDATION_EXPORT const unsigned char ZZMediatorVersionString[];

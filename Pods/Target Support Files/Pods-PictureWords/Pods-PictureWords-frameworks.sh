@@ -170,6 +170,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/ZZBaseTool/ZZBaseTool.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ZZMediator/ZZMediator.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ZZSettings/ZZSettings.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ZZTranslate/ZZTranslate.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
@@ -181,6 +182,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/ZZBaseTool/ZZBaseTool.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ZZMediator/ZZMediator.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ZZSettings/ZZSettings.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ZZTranslate/ZZTranslate.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

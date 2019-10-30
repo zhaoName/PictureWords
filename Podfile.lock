@@ -22,54 +22,64 @@ PODS:
   - mob_smssdk (3.2.3):
     - MOBFoundation
   - MOBFoundation (3.2.6)
-  - SDWebImage (5.2.3):
-    - SDWebImage/Core (= 5.2.3)
-  - SDWebImage/Core (5.2.3)
-  - ZZBaseTool (0.0.3):
-    - ZZBaseTool/ZZCategary (= 0.0.3)
-    - ZZBaseTool/ZZClipAvator (= 0.0.3)
-    - ZZBaseTool/ZZCustomView (= 0.0.3)
-    - ZZBaseTool/ZZNetwotkHandle (= 0.0.3)
-  - ZZBaseTool/ZZCategary (0.0.3):
+  - SDWebImage (5.2.5):
+    - SDWebImage/Core (= 5.2.5)
+  - SDWebImage/Core (5.2.5)
+  - ZZBaseTool (0.0.4):
+    - ZZBaseTool/ZZCategary (= 0.0.4)
+    - ZZBaseTool/ZZClipAvator (= 0.0.4)
+    - ZZBaseTool/ZZCustomView (= 0.0.4)
+    - ZZBaseTool/ZZNetwotkHandle (= 0.0.4)
+  - ZZBaseTool/ZZCategary (0.0.4):
     - MBProgressHUD (~> 1.1.0)
-  - ZZBaseTool/ZZClipAvator (0.0.3)
-  - ZZBaseTool/ZZCustomView (0.0.3)
-  - ZZBaseTool/ZZNetwotkHandle (0.0.3):
+  - ZZBaseTool/ZZClipAvator (0.0.4)
+  - ZZBaseTool/ZZCustomView (0.0.4)
+  - ZZBaseTool/ZZNetwotkHandle (0.0.4):
     - AFNetworking (~> 3.0)
   - ZZLoginAndRegister (0.0.1):
     - mob_smssdk (~> 3.2.3)
     - "ZZMediator/ZZMediator+ZZBaseTool"
-  - ZZMediator (0.0.6):
-    - ZZMediator/Mediator (= 0.0.6)
-    - "ZZMediator/ZZMediator+PictureWords (= 0.0.6)"
-    - "ZZMediator/ZZMediator+ZZBaseTool (= 0.0.6)"
-    - "ZZMediator/ZZMediator+ZZLogin (= 0.0.6)"
-    - "ZZMediator/ZZMediator+ZZSettings (= 0.0.6)"
-  - ZZMediator/Mediator (0.0.6)
-  - "ZZMediator/ZZMediator+PictureWords (0.0.6)":
+  - ZZMediator (0.0.8):
+    - ZZMediator/Mediator (= 0.0.8)
+    - "ZZMediator/ZZMediator+PictureWords (= 0.0.8)"
+    - "ZZMediator/ZZMediator+ZZBaseTool (= 0.0.8)"
+    - "ZZMediator/ZZMediator+ZZLogin (= 0.0.8)"
+    - "ZZMediator/ZZMediator+ZZSettings (= 0.0.8)"
+    - "ZZMediator/ZZMediator+ZZTranslate (= 0.0.8)"
+    - ZZMediator/ZZNoTarget (= 0.0.8)
+  - ZZMediator/Mediator (0.0.8)
+  - "ZZMediator/ZZMediator+PictureWords (0.0.8)":
     - ZZMediator/Mediator
-  - "ZZMediator/ZZMediator+ZZBaseTool (0.0.6)":
+  - "ZZMediator/ZZMediator+ZZBaseTool (0.0.8)":
     - ZZMediator/Mediator
-  - "ZZMediator/ZZMediator+ZZLogin (0.0.6)":
+  - "ZZMediator/ZZMediator+ZZLogin (0.0.8)":
     - ZZMediator/Mediator
-  - "ZZMediator/ZZMediator+ZZSettings (0.0.6)":
+  - "ZZMediator/ZZMediator+ZZSettings (0.0.8)":
     - ZZMediator/Mediator
+  - "ZZMediator/ZZMediator+ZZTranslate (0.0.8)":
+    - ZZMediator/Mediator
+  - ZZMediator/ZZNoTarget (0.0.8)
   - ZZSettings (0.0.1):
     - SDWebImage (~> 5.2.3)
     - "ZZMediator/ZZMediator+ZZBaseTool"
     - "ZZMediator/ZZMediator+ZZLogin"
     - "ZZMediator/ZZMediator+ZZSettings"
+  - ZZTranslate (0.0.1):
+    - Masonry (~> 1.1.0)
+    - MJExtension (~> 3.0.13)
+    - MJRefresh (~> 3.2.0)
+    - SDWebImage (~> 5.2.3)
+    - ZZBaseTool
+    - "ZZMediator/ZZMediator+ZZBaseTool"
+    - ZZMediator/ZZNoTarget
 
 DEPENDENCIES:
   - BmobSDK
-  - Masonry (~> 1.1.0)
-  - MJExtension (~> 3.0.13)
-  - MJRefresh (~> 3.2.0)
-  - SDWebImage
   - ZZBaseTool (~> 0.0.2)
   - ZZLoginAndRegister (~> 0.0.1)
   - ZZMediator (~> 0.0.4)
   - ZZSettings (~> 0.0.1)
+  - ZZTranslate (~> 0.0.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -87,6 +97,7 @@ SPEC REPOS:
     - ZZLoginAndRegister
     - ZZMediator
     - ZZSettings
+    - ZZTranslate
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
@@ -97,12 +108,13 @@ SPEC CHECKSUMS:
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
   mob_smssdk: cdb6a31d4fd4667ed928e2eca03f21ad89ebc05c
   MOBFoundation: 08c456357888e4c984fba23bbf04cfd2f4fc1e02
-  SDWebImage: 46a7f73228f84ce80990c786e4372cf4db5875ce
-  ZZBaseTool: c7f6f31fe437e781165bb84fd08cdc5bb4f2447a
+  SDWebImage: 4eabf2fa6695c95c47724214417a9c036c965e4a
+  ZZBaseTool: d5e8fa0128a5484134d8f17b3af2946d27f992aa
   ZZLoginAndRegister: c28e7c35abf6c8de7e48e4fa01461e52451cad71
-  ZZMediator: 0d22a5ea7b451c7c126b5391d33b0e29e418441e
+  ZZMediator: 649a350fbf4376d78441d35c5e19a8c8f671025e
   ZZSettings: fef2dd18a951be0d2b3c29a41e1844876237eb69
+  ZZTranslate: 2fff3b6644d6b06e3f9784088442556deddf0cc9
 
-PODFILE CHECKSUM: cda2b6d68a9aab1d91dae6c303073575f6b26cb1
+PODFILE CHECKSUM: 44b9a4552c35f88e0b89e082161d07e833f58ec6
 
 COCOAPODS: 1.7.5

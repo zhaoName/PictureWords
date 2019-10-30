@@ -42,7 +42,7 @@
 
 - (UIImage *)bt_getImageWithName:(NSDictionary *)params
 {
-    return [UIImage ltp_imageWithName:params[@"imageName"]];
+    return [UIImage ltp_imageWithName:params[@"imageName"] atClass:params[@"class"]];
 }
 
 
