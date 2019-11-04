@@ -74,54 +74,68 @@
 			<key>orderHint</key>
 			<integer>10</integer>
 		</dict>
-		<key>ZZLoginAndRegister-ZZLoginAndRegister.xcscheme</key>
+		<key>ZZLearnWords-ZZLearnWords.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>12</integer>
 		</dict>
-		<key>ZZLoginAndRegister.xcscheme</key>
+		<key>ZZLearnWords.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>11</integer>
 		</dict>
-		<key>ZZMediator.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>13</integer>
-		</dict>
-		<key>ZZSettings-ZZSettings.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>15</integer>
-		</dict>
-		<key>ZZSettings.xcscheme</key>
+		<key>ZZLoginAndRegister-ZZLoginAndRegister.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>14</integer>
 		</dict>
-		<key>ZZTranslate-ZZTranslate.xcscheme</key>
+		<key>ZZLoginAndRegister.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
+		<key>ZZMediator.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
+		<key>ZZSettings-ZZSettings.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>17</integer>
 		</dict>
-		<key>ZZTranslate.xcscheme</key>
+		<key>ZZSettings.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>16</integer>
+		</dict>
+		<key>ZZTranslate-ZZTranslate.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>19</integer>
+		</dict>
+		<key>ZZTranslate.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>18</integer>
 		</dict>
 		<key>mob_smssdk.xcscheme</key>
 		<dict>

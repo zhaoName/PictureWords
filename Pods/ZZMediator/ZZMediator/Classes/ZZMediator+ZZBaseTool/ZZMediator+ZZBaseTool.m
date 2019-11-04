@@ -35,9 +35,13 @@
     return [self zz_preformTagert:@"ZZBaseToolTarget" action:@"bt_fixImageOrientation:" params:@{@"image":image} shouldCache:NO];
 }
 
-- (UIImage *)cat_imageWithName:(NSString *)imageName atClass:(nonnull Class)cls
+- (UIImage *)cat_imageWithName:(NSString *)imageName atClass:(Class)cls bundleName:(NSString *)bundleName
 {
-    return [self zz_preformTagert:@"ZZBaseToolTarget" action:@"bt_getImageWithName:" params:@{@"imageName":imageName, @"class":cls} shouldCache:NO];
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    [params setValue:imageName forKey:@"imageName"];
+    [params setValue:(cls ? cls : UIImage.class) forKey:@"class"];
+    [params setValue:(bundleName.length ? bundleName : @"") forKey:@"bundleName"];
+    return [self zz_preformTagert:@"ZZBaseToolTarget" action:@"bt_getImageWithName:" params:params shouldCache:NO];
 }
 
 

@@ -36,29 +36,40 @@ PODS:
   - ZZBaseTool/ZZCustomView (0.0.4)
   - ZZBaseTool/ZZNetwotkHandle (0.0.4):
     - AFNetworking (~> 3.0)
+  - ZZLearnWords (0.0.1):
+    - BmobSDK
+    - Masonry (~> 1.1.0)
+    - MJExtension (~> 3.0.13)
+    - MJRefresh (~> 3.2.0)
+    - ZZBaseTool
+    - "ZZMediator/ZZMediator+ZZBaseTool"
+    - ZZMediator/ZZNoTarget
   - ZZLoginAndRegister (0.0.1):
     - mob_smssdk (~> 3.2.3)
     - "ZZMediator/ZZMediator+ZZBaseTool"
-  - ZZMediator (0.0.8):
-    - ZZMediator/Mediator (= 0.0.8)
-    - "ZZMediator/ZZMediator+PictureWords (= 0.0.8)"
-    - "ZZMediator/ZZMediator+ZZBaseTool (= 0.0.8)"
-    - "ZZMediator/ZZMediator+ZZLogin (= 0.0.8)"
-    - "ZZMediator/ZZMediator+ZZSettings (= 0.0.8)"
-    - "ZZMediator/ZZMediator+ZZTranslate (= 0.0.8)"
-    - ZZMediator/ZZNoTarget (= 0.0.8)
-  - ZZMediator/Mediator (0.0.8)
-  - "ZZMediator/ZZMediator+PictureWords (0.0.8)":
+  - ZZMediator (0.0.9):
+    - ZZMediator/Mediator (= 0.0.9)
+    - "ZZMediator/ZZMediator+PictureWords (= 0.0.9)"
+    - "ZZMediator/ZZMediator+ZZBaseTool (= 0.0.9)"
+    - "ZZMediator/ZZMediator+ZZLearnWords (= 0.0.9)"
+    - "ZZMediator/ZZMediator+ZZLogin (= 0.0.9)"
+    - "ZZMediator/ZZMediator+ZZSettings (= 0.0.9)"
+    - "ZZMediator/ZZMediator+ZZTranslate (= 0.0.9)"
+    - ZZMediator/ZZNoTarget (= 0.0.9)
+  - ZZMediator/Mediator (0.0.9)
+  - "ZZMediator/ZZMediator+PictureWords (0.0.9)":
     - ZZMediator/Mediator
-  - "ZZMediator/ZZMediator+ZZBaseTool (0.0.8)":
+  - "ZZMediator/ZZMediator+ZZBaseTool (0.0.9)":
     - ZZMediator/Mediator
-  - "ZZMediator/ZZMediator+ZZLogin (0.0.8)":
+  - "ZZMediator/ZZMediator+ZZLearnWords (0.0.9)":
     - ZZMediator/Mediator
-  - "ZZMediator/ZZMediator+ZZSettings (0.0.8)":
+  - "ZZMediator/ZZMediator+ZZLogin (0.0.9)":
     - ZZMediator/Mediator
-  - "ZZMediator/ZZMediator+ZZTranslate (0.0.8)":
+  - "ZZMediator/ZZMediator+ZZSettings (0.0.9)":
     - ZZMediator/Mediator
-  - ZZMediator/ZZNoTarget (0.0.8)
+  - "ZZMediator/ZZMediator+ZZTranslate (0.0.9)":
+    - ZZMediator/Mediator
+  - ZZMediator/ZZNoTarget (0.0.9)
   - ZZSettings (0.0.1):
     - SDWebImage (~> 5.2.3)
     - "ZZMediator/ZZMediator+ZZBaseTool"
@@ -74,10 +85,10 @@ PODS:
     - ZZMediator/ZZNoTarget
 
 DEPENDENCIES:
-  - BmobSDK
-  - ZZBaseTool (~> 0.0.2)
+  - ZZBaseTool (~> 0.0.4)
+  - ZZLearnWords (~> 0.0.1)
   - ZZLoginAndRegister (~> 0.0.1)
-  - ZZMediator (~> 0.0.4)
+  - ZZMediator (~> 0.0.9)
   - ZZSettings (~> 0.0.1)
   - ZZTranslate (~> 0.0.1)
 
@@ -94,6 +105,7 @@ SPEC REPOS:
     - SDWebImage
   https://github.com/zhaoName/ZZPrivateSpecs.git:
     - ZZBaseTool
+    - ZZLearnWords
     - ZZLoginAndRegister
     - ZZMediator
     - ZZSettings
@@ -110,11 +122,12 @@ SPEC CHECKSUMS:
   MOBFoundation: 08c456357888e4c984fba23bbf04cfd2f4fc1e02
   SDWebImage: 4eabf2fa6695c95c47724214417a9c036c965e4a
   ZZBaseTool: d5e8fa0128a5484134d8f17b3af2946d27f992aa
+  ZZLearnWords: 987b7a52c0d2108acb220fb712e030fe73279243
   ZZLoginAndRegister: c28e7c35abf6c8de7e48e4fa01461e52451cad71
-  ZZMediator: 649a350fbf4376d78441d35c5e19a8c8f671025e
+  ZZMediator: 98308d8b535f5c7e5001d8bcd8d195ea54165cb4
   ZZSettings: fef2dd18a951be0d2b3c29a41e1844876237eb69
   ZZTranslate: 2fff3b6644d6b06e3f9784088442556deddf0cc9
 
-PODFILE CHECKSUM: 44b9a4552c35f88e0b89e082161d07e833f58ec6
+PODFILE CHECKSUM: da75ebde429cd8ed24de617e248a67d138410125
 
 COCOAPODS: 1.7.5

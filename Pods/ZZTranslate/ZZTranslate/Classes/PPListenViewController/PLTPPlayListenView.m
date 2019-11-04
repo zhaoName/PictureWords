@@ -162,7 +162,7 @@
 {
     if (!_singerImageView)
     {
-        UIImage *logoImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"logo" atClass:self.class];
+        UIImage *logoImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"logo" atClass:self.class bundleName:@""];
         _singerImageView = [[UIImageView alloc] initWithImage:logoImage];
         _singerImageView.layer.cornerRadius = 30.0;
         _singerImageView.clipsToBounds = YES;
@@ -197,8 +197,8 @@
     if (!_playingBtn)
     {
         _playingBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        UIImage *playImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"home_play" atClass:self.class];
-        UIImage *pauseImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"home_pause" atClass:self.class];
+        UIImage *playImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"home_play" atClass:self.class bundleName:@""];
+        UIImage *pauseImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"home_pause" atClass:self.class bundleName:@""];
         [_playingBtn setImage:playImage forState:UIControlStateNormal];
         [_playingBtn setImage:pauseImage forState:UIControlStateSelected];
         [_playingBtn addTarget:self action:@selector(touchPlayingBtn:) forControlEvents:UIControlEventTouchUpInside];
@@ -211,7 +211,7 @@
     if (!_nextBtn)
     {
         _nextBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        UIImage *nextImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"home_next" atClass:self.class];
+        UIImage *nextImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"home_next" atClass:self.class bundleName:@""];
         [_nextBtn setImage:nextImage forState:UIControlStateNormal];
         [_nextBtn addTarget:self action:@selector(touchNextBtn:) forControlEvents:UIControlEventTouchUpInside];
     }

@@ -33,7 +33,7 @@
         self.view.backgroundColor = UIColor.systemBackgroundColor;
     }
     [self.view addSubview:self.tableView];
-    UIImage *earImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"music_ting" atClass:self.class];
+    UIImage *earImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"music_ting" atClass:self.class bundleName:@""];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:earImage style:UIBarButtonItemStylePlain target:self action:@selector(touchRightBarItem)];
 }
 
@@ -209,7 +209,7 @@
         _titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 35)];
         
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        UIImage *changeImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"trans_change" atClass:self.class];
+        UIImage *changeImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"trans_change" atClass:self.class bundleName:@""];
         [btn setImage:changeImage forState:UIControlStateNormal];
         btn.frame = CGRectMake(0, 0, 30, 30);
         btn.center = _titleView.center;

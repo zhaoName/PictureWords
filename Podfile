@@ -14,15 +14,16 @@ use_frameworks!
 #pod 'MBProgressHUD', '~> 1.1.0'
 #pod 'Masonry', '~> 1.1.0'
 #pod 'mob_smssdk'
-pod 'BmobSDK'
+#pod 'BmobSDK'
 #pod 'SDWebImage'
 
 
-pod 'ZZBaseTool', '~> 0.0.2'
-pod 'ZZMediator', '~> 0.0.4'
+pod 'ZZBaseTool', '~> 0.0.4'
+pod 'ZZMediator', '~> 0.0.9'
 pod 'ZZLoginAndRegister', '~> 0.0.1'
 pod 'ZZSettings', '~> 0.0.1'
 pod 'ZZTranslate', '~> 0.0.1'
+pod 'ZZLearnWords', '~> 0.0.1'
 
 end
 

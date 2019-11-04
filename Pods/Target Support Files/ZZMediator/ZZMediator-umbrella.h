@@ -11,8 +11,8 @@
 #endif
 
 #import "ZZMediator.h"
-#import "ZZMediator+PictureWords.h"
 #import "ZZMediator+ZZBaseTool.h"
+#import "ZZMediator+ZZLearnWords.h"
 #import "ZZMediator+ZZLogin.h"
 #import "ZZMediator+ZZSettings.h"
 #import "ZZMediator+ZZTranslate.h"

@@ -10,6 +10,7 @@
 #import <SMS_SDK/SMSSDK.h>
 #import "LTPTimer.h"
 #import "LTPPwdTableViewController.h"
+#import <ZZMediator/ZZConstString.h>
 
 @interface LTPRegisterTableViewController ()
 

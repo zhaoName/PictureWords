@@ -21,7 +21,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)cat_checkPwd:(NSString *)pwd;
 
 - (UIImage *)cat_getImageFixOrientation:(UIImage *)image;
-- (UIImage *)cat_imageWithName:(NSString *)imageName atClass:(Class)cls;
+/// 获取组件中的图片
+/// @param imageName 图片名  imageName or imageName.png
+/// @param cls 当前类 若当前组件是动态库则为 UIImage.class
+/// @param bundleName  bundleName 若当前组件是静态库则为 @"" 但不可为 nil
+- (UIImage *)cat_imageWithName:(NSString *)imageName atClass:(Class)cls bundleName:(NSString *)bundleName;
 
 
 - (void)cat_showIndicatorHUDWithMessage:(NSString *)message view:(nullable UIView *)curView;

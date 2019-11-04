@@ -1,0 +1,6 @@
+framework module ZZLearnWords {
+  umbrella header "ZZLearnWords-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -240,7 +240,7 @@
     if (!_closeBtn) {
         _closeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         _closeBtn.hidden = NO;
-        UIImage *closeImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"close" atClass:self.class];
+        UIImage *closeImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"close" atClass:self.class bundleName:@""];
         [_closeBtn setImage:closeImage forState:UIControlStateNormal];
         [_closeBtn addTarget:self action:@selector(touchCloseBtn:) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -287,7 +287,7 @@
         _titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 35)];
         
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        UIImage *changeImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"trans_change" atClass:self.class];
+        UIImage *changeImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"trans_change" atClass:self.class bundleName:@""];
         [btn setImage:changeImage forState:UIControlStateNormal];
         btn.frame = CGRectMake(0, 0, 30, 30);
         btn.center = _titleView.center;

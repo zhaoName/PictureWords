@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-PictureWords/Pods-PictureWords-resources.sh
+${PODS_CONFIGURATION_BUILD_DIR}/ZZLearnWords/ZZLearnWords.bundle
 ${PODS_CONFIGURATION_BUILD_DIR}/ZZLoginAndRegister/ZZLoginAndRegister.bundle

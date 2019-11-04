@@ -7,6 +7,7 @@
 //
 
 #import "LTPPwdLoginTableViewController.h"
+#import <ZZMediator/ZZConstString.h>
 
 @interface LTPPwdLoginTableViewController ()
 

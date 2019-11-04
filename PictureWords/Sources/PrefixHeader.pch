@@ -10,7 +10,6 @@
 #define PrefixHeader_pch
 
 #import <ZZMediator+ZZBaseTool.h>
-#import "PPDataManager.h"
 #import "UIView+ZZFrame.h"
 #import <ZZConstString.h>
 

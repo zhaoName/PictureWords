@@ -8,6 +8,7 @@
 
 #import "LTPInfoTableViewController.h"
 #import "LTPClipAvaterViewController.h"
+#import <ZZMediator/ZZConstString.h>
 
 @interface LTPInfoTableViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate, LTPClipAvaterViewControllerDelegate>
 

@@ -8,6 +8,7 @@
 
 #import "LTPPwdTableViewController.h"
 #import "LTPInfoTableViewController.h"
+#import <ZZMediator/ZZConstString.h>
 
 @interface LTPPwdTableViewController ()
 

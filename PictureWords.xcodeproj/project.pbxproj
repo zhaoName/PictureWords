@@ -7,110 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9716367C22547984007E3380 /* PPSpeechEnglish.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716367B22547984007E3380 /* PPSpeechEnglish.m */; };
-		9716367E2254798D007E3380 /* EnglishData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9716367D2254798D007E3380 /* EnglishData.plist */; };
-		97163E882255D59C007E3380 /* LTPMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97163E872255D59C007E3380 /* LTPMainTabBarController.m */; };
-		97163E8B2255D5CC007E3380 /* LTPHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97163E8A2255D5CC007E3380 /* LTPHomeViewController.m */; };
-		97163E8E2255D5DD007E3380 /* LTPTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97163E8D2255D5DD007E3380 /* LTPTestViewController.m */; };
-		97163E912255D5E7007E3380 /* LTPCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97163E902255D5E7007E3380 /* LTPCollectionViewController.m */; };
-		97163E942255D5F1007E3380 /* LTPProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97163E932255D5F1007E3380 /* LTPProgressViewController.m */; };
-		97163E982255DFF7007E3380 /* PPDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 97163E972255DFF7007E3380 /* PPDataManager.m */; };
-		97163EA62255F72B007E3380 /* PPXuexiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97163EA42255F72B007E3380 /* PPXuexiViewController.m */; };
-		97163EAB2255F73F007E3380 /* LTPReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97163EA92255F73F007E3380 /* LTPReviewViewController.m */; };
-		97163EAC2255F73F007E3380 /* LTPReviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97163EAA2255F73F007E3380 /* LTPReviewViewController.xib */; };
-		97163EB022560F27007E3380 /* LTPCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97163EAE22560F27007E3380 /* LTPCollectionViewCell.m */; };
-		97163EB122560F27007E3380 /* LTPCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97163EAF22560F27007E3380 /* LTPCollectionViewCell.xib */; };
-		97524A43225324DF00A2F878 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97524A42225324DF00A2F878 /* AppDelegate.m */; };
 		97524A4B225324DF00A2F878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97524A4A225324DF00A2F878 /* Assets.xcassets */; };
 		97524A51225324DF00A2F878 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97524A50225324DF00A2F878 /* main.m */; };
 		B7B6421CBFDF434D7BC3EFE4 /* Pods_PictureWords.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A650DC671F7E5299269F94 /* Pods_PictureWords.framework */; };
-		D91C5554225777F500FCA4F0 /* suoyoudaan.plist in Resources */ = {isa = PBXBuildFile; fileRef = D91C5553225777F500FCA4F0 /* suoyoudaan.plist */; };
-		FE19B616225DF03D00892E64 /* PPObviouslyEffectFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FE19B615225DF03D00892E64 /* PPObviouslyEffectFlowLayout.m */; };
-		FE19B619225DF06600892E64 /* ImproveCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE19B618225DF06600892E64 /* ImproveCollectionViewCell.m */; };
-		FE19B61B225DF07D00892E64 /* ImproveCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE19B61A225DF07D00892E64 /* ImproveCollectionViewCell.xib */; };
-		FE6726632358189300FC0D02 /* ZZPictureWordsTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6726622358189300FC0D02 /* ZZPictureWordsTarget.m */; };
-		FE6C8263228A90EF00AAEDA6 /* PPCustomPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6C8262228A90EF00AAEDA6 /* PPCustomPresentationController.m */; };
-		FE6C8266228A915700AAEDA6 /* LTPDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6C8265228A915700AAEDA6 /* LTPDisplayViewController.m */; };
-		FE7EC222225C9A2100D419B0 /* CCDraggableCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7EC21E225C9A2100D419B0 /* CCDraggableCardView.m */; };
-		FE7EC223225C9A2100D419B0 /* CCDraggableContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7EC221225C9A2100D419B0 /* CCDraggableContainer.m */; };
-		FE7EC226225C9D9E00D419B0 /* PPXueXiCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7EC225225C9D9E00D419B0 /* PPXueXiCardView.m */; };
 		FE96796C22B11CD6004585FF /* LaunchImage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE96796B22B11CD6004585FF /* LaunchImage.storyboard */; };
-		FE98146A228AAD9200DBF6E5 /* LTPLearnWordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE981469228AAD9200DBF6E5 /* LTPLearnWordModel.m */; };
-		FE9821B1228C10FB00DBF6E5 /* LTPLearnWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9821B0228C10FB00DBF6E5 /* LTPLearnWordViewController.m */; };
-		FE9821B4228C11A800DBF6E5 /* LTPMemoryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9821B3228C11A800DBF6E5 /* LTPMemoryCollectionViewCell.m */; };
-		FE9821BF228CFCF000DBF6E5 /* PPListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9821BE228CFCF000DBF6E5 /* PPListViewController.m */; };
-		FEC36F522325E87700CE224D /* LTPHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC36F502325E87700CE224D /* LTPHomeTableViewCell.m */; };
-		FEC36F532325E87700CE224D /* LTPHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEC36F512325E87700CE224D /* LTPHomeTableViewCell.xib */; };
-		FEC36F56232625E600CE224D /* LTPHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC36F55232625E600CE224D /* LTPHomeModel.m */; };
+		FEBBAA30237011BE00402A9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBBAA2C237011BE00402A9B /* AppDelegate.m */; };
+		FEBBAA31237011BE00402A9B /* LTPMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBBAA2E237011BE00402A9B /* LTPMainTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		47C8360D80E803BFC8F27326 /* Pods-PictureWords.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PictureWords.debug.xcconfig"; path = "Target Support Files/Pods-PictureWords/Pods-PictureWords.debug.xcconfig"; sourceTree = "<group>"; };
 		6EE776E4226C1D609ED5D8FF /* Pods-PictureWords.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PictureWords.release.xcconfig"; path = "Target Support Files/Pods-PictureWords/Pods-PictureWords.release.xcconfig"; sourceTree = "<group>"; };
-		9716367A22547984007E3380 /* PPSpeechEnglish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSpeechEnglish.h; sourceTree = "<group>"; };
-		9716367B22547984007E3380 /* PPSpeechEnglish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSpeechEnglish.m; sourceTree = "<group>"; };
-		9716367D2254798D007E3380 /* EnglishData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EnglishData.plist; sourceTree = "<group>"; };
-		97163E862255D59C007E3380 /* LTPMainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTPMainTabBarController.h; sourceTree = "<group>"; };
-		97163E872255D59C007E3380 /* LTPMainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTPMainTabBarController.m; sourceTree = "<group>"; };
-		97163E892255D5CC007E3380 /* LTPHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTPHomeViewController.h; sourceTree = "<group>"; };
-		97163E8A2255D5CC007E3380 /* LTPHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTPHomeViewController.m; sourceTree = "<group>"; };
-		97163E8C2255D5DD007E3380 /* LTPTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTPTestViewController.h; sourceTree = "<group>"; };
-		97163E8D2255D5DD007E3380 /* LTPTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTPTestViewController.m; sourceTree = "<group>"; };
-		97163E8F2255D5E7007E3380 /* LTPCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTPCollectionViewController.h; sourceTree = "<group>"; };
-		97163E902255D5E7007E3380 /* LTPCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTPCollectionViewController.m; sourceTree = "<group>"; };
-		97163E922255D5F1007E3380 /* LTPProgressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTPProgressViewController.h; sourceTree = "<group>"; };
-		97163E932255D5F1007E3380 /* LTPProgressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTPProgressViewController.m; sourceTree = "<group>"; };
 		97163E952255D7A4007E3380 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		97163E962255DFF7007E3380 /* PPDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPDataManager.h; sourceTree = "<group>"; };
-		97163E972255DFF7007E3380 /* PPDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPDataManager.m; sourceTree = "<group>"; };
-		97163EA32255F72B007E3380 /* PPXuexiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPXuexiViewController.h; sourceTree = "<group>"; };
-		97163EA42255F72B007E3380 /* PPXuexiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPXuexiViewController.m; sourceTree = "<group>"; };
-		97163EA82255F73F007E3380 /* LTPReviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTPReviewViewController.h; sourceTree = "<group>"; };
-		97163EA92255F73F007E3380 /* LTPReviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTPReviewViewController.m; sourceTree = "<group>"; };
-		97163EAA2255F73F007E3380 /* LTPReviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LTPReviewViewController.xib; sourceTree = "<group>"; };
-		97163EAD22560F27007E3380 /* LTPCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTPCollectionViewCell.h; sourceTree = "<group>"; };
-		97163EAE22560F27007E3380 /* LTPCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTPCollectionViewCell.m; sourceTree = "<group>"; };
-		97163EAF22560F27007E3380 /* LTPCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LTPCollectionViewCell.xib; sourceTree = "<group>"; };
 		97524A3E225324DF00A2F878 /* PictureWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PictureWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		97524A41225324DF00A2F878 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		97524A42225324DF00A2F878 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		97524A4A225324DF00A2F878 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97524A4F225324DF00A2F878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97524A50225324DF00A2F878 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C4A650DC671F7E5299269F94 /* Pods_PictureWords.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PictureWords.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D91C5553225777F500FCA4F0 /* suoyoudaan.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = suoyoudaan.plist; sourceTree = "<group>"; };
-		FE19B614225DF03D00892E64 /* PPObviouslyEffectFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPObviouslyEffectFlowLayout.h; sourceTree = "<group>"; };
-		FE19B615225DF03D00892E64 /* PPObviouslyEffectFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPObviouslyEffectFlowLayout.m; sourceTree = "<group>"; };
-		FE19B617225DF06600892E64 /* ImproveCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImproveCollectionViewCell.h; sourceTree = "<group>"; };
-		FE19B618225DF06600892E64 /* ImproveCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImproveCollectionViewCell.m; sourceTree = "<group>"; };
-		FE19B61A225DF07D00892E64 /* ImproveCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImproveCollectionViewCell.xib; sourceTree = "<group>"; };
-		FE6726612358189300FC0D02 /* ZZPictureWordsTarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZPictureWordsTarget.h; sourceTree = "<group>"; };
-		FE6726622358189300FC0D02 /* ZZPictureWordsTarget.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZPictureWordsTarget.m; sourceTree = "<group>"; };
-		FE6C8261228A90EF00AAEDA6 /* PPCustomPresentationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCustomPresentationController.h; sourceTree = "<group>"; };
-		FE6C8262228A90EF00AAEDA6 /* PPCustomPresentationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCustomPresentationController.m; sourceTree = "<group>"; };
-		FE6C8264228A915700AAEDA6 /* LTPDisplayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTPDisplayViewController.h; sourceTree = "<group>"; };
-		FE6C8265228A915700AAEDA6 /* LTPDisplayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTPDisplayViewController.m; sourceTree = "<group>"; };
-		FE7EC21D225C9A2100D419B0 /* CCDraggableCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCDraggableCardView.h; sourceTree = "<group>"; };
-		FE7EC21E225C9A2100D419B0 /* CCDraggableCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCDraggableCardView.m; sourceTree = "<group>"; };
-		FE7EC21F225C9A2100D419B0 /* CCDraggableConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCDraggableConfig.h; sourceTree = "<group>"; };
-		FE7EC220225C9A2100D419B0 /* CCDraggableContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCDraggableContainer.h; sourceTree = "<group>"; };
-		FE7EC221225C9A2100D419B0 /* CCDraggableContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCDraggableContainer.m; sourceTree = "<group>"; };
-		FE7EC224225C9D9E00D419B0 /* PPXueXiCardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPXueXiCardView.h; sourceTree = "<group>"; };
-		FE7EC225225C9D9E00D419B0 /* PPXueXiCardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPXueXiCardView.m; sourceTree = "<group>"; };
 		FE96796B22B11CD6004585FF /* LaunchImage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchImage.storyboard; sourceTree = "<group>"; };
-		FE981468228AAD9200DBF6E5 /* LTPLearnWordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTPLearnWordModel.h; sourceTree = "<group>"; };
-		FE981469228AAD9200DBF6E5 /* LTPLearnWordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTPLearnWordModel.m; sourceTree = "<group>"; };
-		FE9821AF228C10FB00DBF6E5 /* LTPLearnWordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTPLearnWordViewController.h; sourceTree = "<group>"; };
-		FE9821B0228C10FB00DBF6E5 /* LTPLearnWordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTPLearnWordViewController.m; sourceTree = "<group>"; };
-		FE9821B2228C11A800DBF6E5 /* LTPMemoryCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTPMemoryCollectionViewCell.h; sourceTree = "<group>"; };
-		FE9821B3228C11A800DBF6E5 /* LTPMemoryCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTPMemoryCollectionViewCell.m; sourceTree = "<group>"; };
-		FE9821BD228CFCF000DBF6E5 /* PPListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPListViewController.h; sourceTree = "<group>"; };
-		FE9821BE228CFCF000DBF6E5 /* PPListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPListViewController.m; sourceTree = "<group>"; };
-		FEC36F4F2325E87700CE224D /* LTPHomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTPHomeTableViewCell.h; sourceTree = "<group>"; };
-		FEC36F502325E87700CE224D /* LTPHomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTPHomeTableViewCell.m; sourceTree = "<group>"; };
-		FEC36F512325E87700CE224D /* LTPHomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LTPHomeTableViewCell.xib; sourceTree = "<group>"; };
-		FEC36F54232625E600CE224D /* LTPHomeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTPHomeModel.h; sourceTree = "<group>"; };
-		FEC36F55232625E600CE224D /* LTPHomeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTPHomeModel.m; sourceTree = "<group>"; };
+		FEBBAA2C237011BE00402A9B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FEBBAA2D237011BE00402A9B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FEBBAA2E237011BE00402A9B /* LTPMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTPMainTabBarController.m; sourceTree = "<group>"; };
+		FEBBAA2F237011BE00402A9B /* LTPMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTPMainTabBarController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,8 +55,6 @@
 		97524A35225324DF00A2F878 = {
 			isa = PBXGroup;
 			children = (
-				97524A41225324DF00A2F878 /* AppDelegate.h */,
-				97524A42225324DF00A2F878 /* AppDelegate.m */,
 				97524A40225324DF00A2F878 /* PictureWords */,
 				97524A3F225324DF00A2F878 /* Products */,
 				48E625426F30E716F66E2813 /* Pods */,
@@ -157,13 +73,10 @@
 		97524A40225324DF00A2F878 /* PictureWords */ = {
 			isa = PBXGroup;
 			children = (
-				FE6726602358186500FC0D02 /* ZZPictureWordsTarget */,
-				FE33497D22B1F3E100C957D6 /* LTPCommon */,
-				FE9821BC228CFC5800DBF6E5 /* Custom */,
-				FE9821B6228CFB5F00DBF6E5 /* LTPLearningViewController */,
-				FE9821B7228CFB8400DBF6E5 /* LTPCollectionViewController */,
-				FE9821B8228CFBA300DBF6E5 /* LTPProgressViewController */,
-				FE9821B9228CFBBE00DBF6E5 /* LTPTestViewController */,
+				FEBBAA2D237011BE00402A9B /* AppDelegate.h */,
+				FEBBAA2C237011BE00402A9B /* AppDelegate.m */,
+				FEBBAA2F237011BE00402A9B /* LTPMainTabBarController.h */,
+				FEBBAA2E237011BE00402A9B /* LTPMainTabBarController.m */,
 				FE9821BB228CFC2C00DBF6E5 /* Sources */,
 			);
 			path = PictureWords;
@@ -177,97 +90,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FE33497D22B1F3E100C957D6 /* LTPCommon */ = {
-			isa = PBXGroup;
-			children = (
-				FE7EC21D225C9A2100D419B0 /* CCDraggableCardView.h */,
-				FE7EC21E225C9A2100D419B0 /* CCDraggableCardView.m */,
-				FE7EC21F225C9A2100D419B0 /* CCDraggableConfig.h */,
-				FE7EC220225C9A2100D419B0 /* CCDraggableContainer.h */,
-				FE7EC221225C9A2100D419B0 /* CCDraggableContainer.m */,
-				9716367A22547984007E3380 /* PPSpeechEnglish.h */,
-				9716367B22547984007E3380 /* PPSpeechEnglish.m */,
-				97163E962255DFF7007E3380 /* PPDataManager.h */,
-				97163E972255DFF7007E3380 /* PPDataManager.m */,
-			);
-			path = LTPCommon;
-			sourceTree = "<group>";
-		};
-		FE6726602358186500FC0D02 /* ZZPictureWordsTarget */ = {
-			isa = PBXGroup;
-			children = (
-				FE6726612358189300FC0D02 /* ZZPictureWordsTarget.h */,
-				FE6726622358189300FC0D02 /* ZZPictureWordsTarget.m */,
-			);
-			path = ZZPictureWordsTarget;
-			sourceTree = "<group>";
-		};
-		FE9821B6228CFB5F00DBF6E5 /* LTPLearningViewController */ = {
-			isa = PBXGroup;
-			children = (
-				FE6C8264228A915700AAEDA6 /* LTPDisplayViewController.h */,
-				FE6C8265228A915700AAEDA6 /* LTPDisplayViewController.m */,
-				97163E892255D5CC007E3380 /* LTPHomeViewController.h */,
-				97163E8A2255D5CC007E3380 /* LTPHomeViewController.m */,
-				FEC36F4F2325E87700CE224D /* LTPHomeTableViewCell.h */,
-				FEC36F502325E87700CE224D /* LTPHomeTableViewCell.m */,
-				FEC36F512325E87700CE224D /* LTPHomeTableViewCell.xib */,
-				FEC36F54232625E600CE224D /* LTPHomeModel.h */,
-				FEC36F55232625E600CE224D /* LTPHomeModel.m */,
-				FE9821AF228C10FB00DBF6E5 /* LTPLearnWordViewController.h */,
-				FE9821B0228C10FB00DBF6E5 /* LTPLearnWordViewController.m */,
-				FE9821B2228C11A800DBF6E5 /* LTPMemoryCollectionViewCell.h */,
-				FE9821B3228C11A800DBF6E5 /* LTPMemoryCollectionViewCell.m */,
-				FE981468228AAD9200DBF6E5 /* LTPLearnWordModel.h */,
-				FE981469228AAD9200DBF6E5 /* LTPLearnWordModel.m */,
-			);
-			path = LTPLearningViewController;
-			sourceTree = "<group>";
-		};
-		FE9821B7228CFB8400DBF6E5 /* LTPCollectionViewController */ = {
-			isa = PBXGroup;
-			children = (
-				97163E8F2255D5E7007E3380 /* LTPCollectionViewController.h */,
-				97163E902255D5E7007E3380 /* LTPCollectionViewController.m */,
-				97163EAD22560F27007E3380 /* LTPCollectionViewCell.h */,
-				97163EAE22560F27007E3380 /* LTPCollectionViewCell.m */,
-				97163EAF22560F27007E3380 /* LTPCollectionViewCell.xib */,
-				97163EA32255F72B007E3380 /* PPXuexiViewController.h */,
-				97163EA42255F72B007E3380 /* PPXuexiViewController.m */,
-				FE7EC224225C9D9E00D419B0 /* PPXueXiCardView.h */,
-				FE7EC225225C9D9E00D419B0 /* PPXueXiCardView.m */,
-			);
-			path = LTPCollectionViewController;
-			sourceTree = "<group>";
-		};
-		FE9821B8228CFBA300DBF6E5 /* LTPProgressViewController */ = {
-			isa = PBXGroup;
-			children = (
-				97163E922255D5F1007E3380 /* LTPProgressViewController.h */,
-				97163E932255D5F1007E3380 /* LTPProgressViewController.m */,
-				FE19B617225DF06600892E64 /* ImproveCollectionViewCell.h */,
-				FE19B618225DF06600892E64 /* ImproveCollectionViewCell.m */,
-				FE19B61A225DF07D00892E64 /* ImproveCollectionViewCell.xib */,
-				FE19B614225DF03D00892E64 /* PPObviouslyEffectFlowLayout.h */,
-				FE19B615225DF03D00892E64 /* PPObviouslyEffectFlowLayout.m */,
-				FE9821BD228CFCF000DBF6E5 /* PPListViewController.h */,
-				FE9821BE228CFCF000DBF6E5 /* PPListViewController.m */,
-			);
-			path = LTPProgressViewController;
-			sourceTree = "<group>";
-		};
-		FE9821B9228CFBBE00DBF6E5 /* LTPTestViewController */ = {
-			isa = PBXGroup;
-			children = (
-				97163E8C2255D5DD007E3380 /* LTPTestViewController.h */,
-				97163E8D2255D5DD007E3380 /* LTPTestViewController.m */,
-				97163EA82255F73F007E3380 /* LTPReviewViewController.h */,
-				97163EA92255F73F007E3380 /* LTPReviewViewController.m */,
-				97163EAA2255F73F007E3380 /* LTPReviewViewController.xib */,
-			);
-			path = LTPTestViewController;
-			sourceTree = "<group>";
-		};
 		FE9821BB228CFC2C00DBF6E5 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,21 +98,8 @@
 				FE96796B22B11CD6004585FF /* LaunchImage.storyboard */,
 				97524A50225324DF00A2F878 /* main.m */,
 				97163E952255D7A4007E3380 /* PrefixHeader.pch */,
-				9716367D2254798D007E3380 /* EnglishData.plist */,
-				D91C5553225777F500FCA4F0 /* suoyoudaan.plist */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		FE9821BC228CFC5800DBF6E5 /* Custom */ = {
-			isa = PBXGroup;
-			children = (
-				97163E862255D59C007E3380 /* LTPMainTabBarController.h */,
-				97163E872255D59C007E3380 /* LTPMainTabBarController.m */,
-				FE6C8261228A90EF00AAEDA6 /* PPCustomPresentationController.h */,
-				FE6C8262228A90EF00AAEDA6 /* PPCustomPresentationController.m */,
-			);
-			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,8 +113,8 @@
 				97524A3A225324DF00A2F878 /* Sources */,
 				97524A3B225324DF00A2F878 /* Frameworks */,
 				97524A3C225324DF00A2F878 /* Resources */,
-				1667DA0A2297FEB1784BC9A5 /* [CP] Copy Pods Resources */,
-				C2A1789DA51F69F970277D5D /* [CP] Embed Pods Frameworks */,
+				F0E636E4993011D5B140414B /* [CP] Embed Pods Frameworks */,
+				B73015611B3037BBC0DD950E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -356,21 +165,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97163EAC2255F73F007E3380 /* LTPReviewViewController.xib in Resources */,
-				D91C5554225777F500FCA4F0 /* suoyoudaan.plist in Resources */,
-				FE19B61B225DF07D00892E64 /* ImproveCollectionViewCell.xib in Resources */,
-				FEC36F532325E87700CE224D /* LTPHomeTableViewCell.xib in Resources */,
-				97163EB122560F27007E3380 /* LTPCollectionViewCell.xib in Resources */,
 				97524A4B225324DF00A2F878 /* Assets.xcassets in Resources */,
 				FE96796C22B11CD6004585FF /* LaunchImage.storyboard in Resources */,
-				9716367E2254798D007E3380 /* EnglishData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1667DA0A2297FEB1784BC9A5 /* [CP] Copy Pods Resources */ = {
+		B73015611B3037BBC0DD950E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -385,23 +188,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PictureWords/Pods-PictureWords-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C2A1789DA51F69F970277D5D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PictureWords/Pods-PictureWords-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PictureWords/Pods-PictureWords-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PictureWords/Pods-PictureWords-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EC94BA74BF3780692B12AF66 /* [CP] Check Pods Manifest.lock */ = {
@@ -426,6 +212,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F0E636E4993011D5B140414B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PictureWords/Pods-PictureWords-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PictureWords/Pods-PictureWords-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PictureWords/Pods-PictureWords-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -433,32 +236,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9716367C22547984007E3380 /* PPSpeechEnglish.m in Sources */,
-				FEC36F522325E87700CE224D /* LTPHomeTableViewCell.m in Sources */,
-				FE9821B4228C11A800DBF6E5 /* LTPMemoryCollectionViewCell.m in Sources */,
-				97163E982255DFF7007E3380 /* PPDataManager.m in Sources */,
-				FE19B619225DF06600892E64 /* ImproveCollectionViewCell.m in Sources */,
-				97163E882255D59C007E3380 /* LTPMainTabBarController.m in Sources */,
-				FE9821BF228CFCF000DBF6E5 /* PPListViewController.m in Sources */,
-				FE6726632358189300FC0D02 /* ZZPictureWordsTarget.m in Sources */,
-				FE19B616225DF03D00892E64 /* PPObviouslyEffectFlowLayout.m in Sources */,
-				FE7EC223225C9A2100D419B0 /* CCDraggableContainer.m in Sources */,
+				FEBBAA30237011BE00402A9B /* AppDelegate.m in Sources */,
+				FEBBAA31237011BE00402A9B /* LTPMainTabBarController.m in Sources */,
 				97524A51225324DF00A2F878 /* main.m in Sources */,
-				FEC36F56232625E600CE224D /* LTPHomeModel.m in Sources */,
-				97163E8B2255D5CC007E3380 /* LTPHomeViewController.m in Sources */,
-				FE6C8266228A915700AAEDA6 /* LTPDisplayViewController.m in Sources */,
-				97163EB022560F27007E3380 /* LTPCollectionViewCell.m in Sources */,
-				97163EAB2255F73F007E3380 /* LTPReviewViewController.m in Sources */,
-				FE6C8263228A90EF00AAEDA6 /* PPCustomPresentationController.m in Sources */,
-				FE7EC226225C9D9E00D419B0 /* PPXueXiCardView.m in Sources */,
-				97163EA62255F72B007E3380 /* PPXuexiViewController.m in Sources */,
-				97163E942255D5F1007E3380 /* LTPProgressViewController.m in Sources */,
-				FE98146A228AAD9200DBF6E5 /* LTPLearnWordModel.m in Sources */,
-				97163E8E2255D5DD007E3380 /* LTPTestViewController.m in Sources */,
-				FE9821B1228C10FB00DBF6E5 /* LTPLearnWordViewController.m in Sources */,
-				97163E912255D5E7007E3380 /* LTPCollectionViewController.m in Sources */,
-				FE7EC222225C9A2100D419B0 /* CCDraggableCardView.m in Sources */,
-				97524A43225324DF00A2F878 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

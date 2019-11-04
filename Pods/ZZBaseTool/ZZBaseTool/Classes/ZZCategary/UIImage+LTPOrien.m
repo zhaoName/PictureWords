@@ -84,15 +84,25 @@
 }
 
 
-+ (UIImage *)ltp_imageWithName:(NSString *)imageName atClass:(Class)cls
++ (UIImage *)ltp_imageWithName:(NSString *)imageName atClass:(Class)cls bundlenName:(NSString *)bundleName
 {
-    // 图片全名，@2x @3x 也要带上
-    imageName = [NSString stringWithFormat:@"%@@%dx.png", imageName, (int)[UIScreen mainScreen].scale];
-    NSBundle *bundle = [NSBundle bundleForClass:cls];
-    NSString *zzBaseBunleName = bundle.infoDictionary[@"CFBundleName"];
-    NSString *baseDirectory = [NSString stringWithFormat:@"%@.bundle", zzBaseBunleName];
+    if (![imageName containsString:@".png"] && ![imageName containsString:@".jpg"]) {
+        // 图片全名，@2x @3x 也要带上
+        imageName = [NSString stringWithFormat:@"%@@%dx.png", imageName, (int)[UIScreen mainScreen].scale];
+    }
     
-    NSString *path = [bundle pathForResource:imageName ofType:nil inDirectory:baseDirectory];
+    NSString *path = nil;
+    if (bundleName.length) {
+        // 静态库
+        path = [[NSBundle mainBundle] pathForResource:bundleName ofType:@"bundle"];
+        path = [path stringByAppendingPathComponent:imageName];
+    }
+    else {
+        // 动态库
+        NSBundle *bundle = [NSBundle bundleForClass:cls];
+        NSString *baseDirectory = [NSString stringWithFormat:@"%@.bundle", bundle.infoDictionary[@"CFBundleName"]];
+        path = [bundle pathForResource:imageName ofType:nil inDirectory:baseDirectory];
+    }
     return [UIImage imageWithContentsOfFile:path];
 }
 

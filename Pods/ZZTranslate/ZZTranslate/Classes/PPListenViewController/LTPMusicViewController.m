@@ -176,7 +176,7 @@
     self.currentTimeLabel.text = [self getFormatTimeWithTimeInterval:[LTPPlayMusicHandle ltp_shareMusicTool].currntMusicPlayTime];
     self.totalTiemLabel.text = [self getFormatTimeWithTimeInterval:self.musicModel.duration];
     self.nameLabel.text = self.musicModel.title;
-    UIImage *logoImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"logo" atClass:self.class];
+    UIImage *logoImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"logo" atClass:self.class bundleName:@""];
     self.singerImageView.image = logoImage;
     self.leftImageView.image = logoImage;
     self.rightImageView.image = logoImage;
@@ -285,7 +285,7 @@
 {
     if (!_bgImageView)
     {
-        UIImage *headImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"head_bg" atClass:self.class];
+        UIImage *headImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"head_bg" atClass:self.class bundleName:@""];
         _bgImageView = [[UIImageView alloc] initWithImage:headImage];
     }
     return _bgImageView;
@@ -380,7 +380,7 @@
         _progressSlider = [[UISlider alloc] initWithFrame:CGRectZero];
         _progressSlider.minimumTrackTintColor = [[ZZMediator defaultZZMediator] cat_colorWithHexString:@"0x44bb88"];
         
-        UIImage *sliderImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"slider" atClass:self.class];
+        UIImage *sliderImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"slider" atClass:self.class bundleName:@""];
         [_progressSlider setThumbImage:sliderImage forState:UIControlStateNormal];
         [_progressSlider setThumbImage:sliderImage forState:UIControlStateSelected];
         
@@ -396,7 +396,7 @@
     if (!_lastBtn)
     {
         _lastBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        UIImage *playImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"previous-track" atClass:self.class];
+        UIImage *playImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"previous-track" atClass:self.class bundleName:@""];
         [_lastBtn setImage:playImage forState:UIControlStateNormal];
         [_lastBtn setImage:playImage forState:UIControlStateHighlighted];
         [_lastBtn addTarget:self action:@selector(touchLasteBtn:) forControlEvents:UIControlEventTouchUpInside];
@@ -408,8 +408,8 @@
 {
     if (!_playBtn) {
         _playBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        UIImage *startImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"play" atClass:self.class];
-        UIImage *playImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"stop" atClass:self.class];
+        UIImage *startImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"play" atClass:self.class bundleName:@""];
+        UIImage *playImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"stop" atClass:self.class bundleName:@""];
         [_playBtn setImage:startImage forState:UIControlStateNormal];
         [_playBtn setImage:playImage forState:UIControlStateSelected];
         _playBtn.selected = false;
@@ -422,7 +422,7 @@
 {
     if (!_nextBtn) {
         _nextBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        UIImage *nextImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"next-one" atClass:self.class];
+        UIImage *nextImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"next-one" atClass:self.class bundleName:@""];
         [_nextBtn setImage:nextImage forState:UIControlStateNormal];
         [_nextBtn setImage:nextImage forState:UIControlStateHighlighted];
         [_nextBtn addTarget:self action:@selector(touchNextBtn:) forControlEvents:UIControlEventTouchUpInside];
@@ -434,7 +434,7 @@
     if (!_backBtn)
     {
         _backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        UIImage *backImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"nav_back" atClass:self.class];
+        UIImage *backImage = [[ZZMediator defaultZZMediator] cat_imageWithName:@"nav_back" atClass:self.class bundleName:@""];
         [_backBtn setImage:backImage forState:UIControlStateNormal];
         [_backBtn addTarget:self action:@selector(clickLeftItem:) forControlEvents:UIControlEventTouchUpInside];
     }
