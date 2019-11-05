@@ -47,6 +47,7 @@ PODS:
   - ZZLoginAndRegister (0.0.1):
     - mob_smssdk (~> 3.2.3)
     - "ZZMediator/ZZMediator+ZZBaseTool"
+    - ZZMediator/ZZNoTarget
   - ZZMediator (0.0.9):
     - ZZMediator/Mediator (= 0.0.9)
     - "ZZMediator/ZZMediator+PictureWords (= 0.0.9)"
@@ -73,8 +74,10 @@ PODS:
   - ZZSettings (0.0.1):
     - SDWebImage (~> 5.2.3)
     - "ZZMediator/ZZMediator+ZZBaseTool"
+    - "ZZMediator/ZZMediator+ZZLearnWords"
     - "ZZMediator/ZZMediator+ZZLogin"
     - "ZZMediator/ZZMediator+ZZSettings"
+    - ZZMediator/ZZNoTarget
   - ZZTranslate (0.0.1):
     - Masonry (~> 1.1.0)
     - MJExtension (~> 3.0.13)
@@ -123,9 +126,9 @@ SPEC CHECKSUMS:
   SDWebImage: 4eabf2fa6695c95c47724214417a9c036c965e4a
   ZZBaseTool: d5e8fa0128a5484134d8f17b3af2946d27f992aa
   ZZLearnWords: 987b7a52c0d2108acb220fb712e030fe73279243
-  ZZLoginAndRegister: c28e7c35abf6c8de7e48e4fa01461e52451cad71
+  ZZLoginAndRegister: bdc63c956dd302049443915be10c6e4562c8800d
   ZZMediator: 98308d8b535f5c7e5001d8bcd8d195ea54165cb4
-  ZZSettings: fef2dd18a951be0d2b3c29a41e1844876237eb69
+  ZZSettings: c017051a6dfd6f0fc79e16795d0bad9c540677b2
   ZZTranslate: 2fff3b6644d6b06e3f9784088442556deddf0cc9
 
 PODFILE CHECKSUM: da75ebde429cd8ed24de617e248a67d138410125

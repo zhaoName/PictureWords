@@ -12,6 +12,7 @@
 #import <ZZMediator/ZZMediator+ZZBaseTool.h>
 #import <ZZMediator/ZZMediator+ZZLogin.h>
 #import <ZZMediator/ZZMediator+ZZLearnWords.h>
+#import <ZZMediator/ZZConstString.h>
 
 @interface LTPSetTableViewController ()
 
@@ -39,8 +40,8 @@
     CGFloat caches = [self ltp_calculateFileSize:path];
     self.cacheLabel.text = [NSString stringWithFormat:@"%.02f M", caches/1000.0/1000.0];
     
-    NSString *nickName = [[NSUserDefaults standardUserDefaults] objectForKey:@"kLTPWordsNickName"];
-    NSMutableString *phone = [[[NSUserDefaults standardUserDefaults] objectForKey:@"LTPWordsPhone"] mutableCopy];
+    NSString *nickName = [[NSUserDefaults standardUserDefaults] objectForKey:kLTPWordsNickName];
+    NSMutableString *phone = [[[NSUserDefaults standardUserDefaults] objectForKey:kLTPWordsPhone] mutableCopy];
     [phone replaceCharactersInRange:NSMakeRange(3, 4) withString:@"****"];
     self.nickNameLabel.text = nickName.length == 0 ? phone : nickName;
     
@@ -83,7 +84,7 @@
 {
     UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"您确定要退出登录吗?" message:nil preferredStyle:UIAlertControllerStyleAlert];
     [alertVC addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"LTPWordsPhone"];
+        [[NSUserDefaults standardUserDefaults] removeObjectForKey:kLTPWordsPhone];
         [[NSUserDefaults standardUserDefaults] synchronize];
         [UIApplication sharedApplication].keyWindow.rootViewController = [[ZZMediator defaultZZMediator] login_fetchLoginVC];
     }]];

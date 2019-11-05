@@ -11,6 +11,3 @@
 #endif
 
 #import "ZZMediator+ZZBaseTool.h"
-#define kLTPWordsPwd @"LTPWordsPwd"
-#define kLTPWordsPhone @"LTPWordsPhone"
-#define kLTPWordsNickName @"kLTPWordsNickName"

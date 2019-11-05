@@ -13,8 +13,5 @@
 #import "UIView+ZZFrame.h"
 #import <ZZConstString.h>
 
-//#define kLTPWordsPwd @"LTPWordsPwd"
-//#define kLTPWordsPhone @"LTPWordsPhone"
-//#define kLTPWordsNickName @"kLTPWordsNickName"
 
 #endif /* PrefixHeader_pch */
